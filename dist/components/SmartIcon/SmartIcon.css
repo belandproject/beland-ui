@@ -1,0 +1,12 @@
+.dcl.smart-icon {
+  position: relative;
+  display: inline-block;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.33325 16L7.33325 10H1.33325L10.6666 0L8.66659 6H14.6666L5.33325 16Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
+}
