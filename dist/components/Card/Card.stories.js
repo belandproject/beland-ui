@@ -8,7 +8,7 @@ var Button_1 = require("../Button/Button");
 var Container_1 = require("../Container/Container");
 var Header_1 = require("../Header/Header");
 var HeaderMenu_1 = require("../HeaderMenu/HeaderMenu");
-var Mana_1 = require("../Mana/Mana");
+var Bean_1 = require("../Bean/Bean");
 var Card_1 = require("./Card");
 var cards = [
     {
@@ -64,4 +64,4 @@ react_1.storiesOf('Card', module)
                 "Weight ",
                 card.weight,
                 " ",
-                React.createElement(Mana_1.Mana, { inline: true }))))); })))); });
+                React.createElement(Bean_1.Bean, { inline: true }))))); })))); });

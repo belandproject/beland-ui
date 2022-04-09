@@ -2,7 +2,7 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import centered from '@storybook/addon-centered/react'
 import { AvatarFace } from './AvatarFace'
-import { Mana } from '../Mana/Mana'
+import { Bean } from '../Bean/Bean'
 import { avatar } from '../../data/avatar'
 
 storiesOf('AvatarFace', module)
@@ -18,7 +18,7 @@ storiesOf('AvatarFace', module)
   ))
   .add('In a paragraph', () => (
     <p>
-      You've transferred <Mana inline>1,000</Mana> to{' '}
+      You've transferred <Bean inline>1,000</Bean> to{' '}
       <AvatarFace size="tiny" inline avatar={avatar} /> <strong>cazala</strong>
     </p>
   ))

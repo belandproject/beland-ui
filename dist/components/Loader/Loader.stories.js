@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var provider_type_1 = require("@dcl/schemas/dist/dapps/provider-type");
+var provider_type_1 = require("@beland/schemas/dist/dapps/provider-type");
 var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Loader_1 = require("./Loader");

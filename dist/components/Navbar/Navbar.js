@@ -16,7 +16,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Navbar = void 0;
 var React = require("react");
 var Menu_1 = require("semantic-ui-react/dist/commonjs/collections/Menu");
-var Mana_1 = require("../Mana/Mana");
+var Bean_1 = require("../Bean/Bean");
 var Blockie_1 = require("../Blockie/Blockie");
 var Container_1 = require("../Container/Container");
 var Header_1 = require("../Header/Header");
@@ -52,12 +52,12 @@ var Navbar = /** @class */ (function (_super) {
             return leftMenu;
         }
         return (React.createElement(React.Fragment, null,
-            React.createElement(Menu_1.default.Item, { active: activePage === 'marketplace', href: "https://market.decentraland.org" }, i18n.menu.marketplace),
-            React.createElement(Menu_1.default.Item, { active: activePage === 'builder', href: "https://builder.decentraland.org" }, i18n.menu.builder),
-            React.createElement(Menu_1.default.Item, { active: activePage === 'docs', href: "https://docs.decentraland.org" }, i18n.menu.docs),
-            React.createElement(Menu_1.default.Item, { active: activePage === 'events', href: "https://events.decentraland.org" }, i18n.menu.events),
-            React.createElement(Menu_1.default.Item, { active: activePage === 'dao', href: "https://dao.decentraland.org" }, i18n.menu.dao),
-            React.createElement(Menu_1.default.Item, { active: activePage === 'blog', href: "https://decentraland.org/blog" }, i18n.menu.blog)));
+            React.createElement(Menu_1.default.Item, { active: activePage === 'marketplace', href: "https://market.beland.io" }, i18n.menu.marketplace),
+            React.createElement(Menu_1.default.Item, { active: activePage === 'builder', href: "https://builder.beland.io" }, i18n.menu.builder),
+            React.createElement(Menu_1.default.Item, { active: activePage === 'docs', href: "https://docs.beland.io" }, i18n.menu.docs),
+            React.createElement(Menu_1.default.Item, { active: activePage === 'events', href: "https://events.beland.io" }, i18n.menu.events),
+            React.createElement(Menu_1.default.Item, { active: activePage === 'dao', href: "https://dao.beland.io" }, i18n.menu.dao),
+            React.createElement(Menu_1.default.Item, { active: activePage === 'blog', href: "https://blog.beland.io" }, i18n.menu.blog)));
     };
     Navbar.prototype.renderRightMenu = function () {
         var _a = this.props, rightMenu = _a.rightMenu, middleMenu = _a.middleMenu, isConnected = _a.isConnected, onClickAccount = _a.onClickAccount, mana = _a.mana, address = _a.address, isConnecting = _a.isConnecting, isSignIn = _a.isSignIn, i18n = _a.i18n, onSignIn = _a.onSignIn;
@@ -69,7 +69,7 @@ var Navbar = /** @class */ (function (_super) {
                 middleMenu ? (React.createElement(Media_1.NotMobile, null,
                     React.createElement(Menu_1.default, { secondary: true, className: "dcl navbar-account-menu" }, middleMenu))) : null,
                 React.createElement("span", { className: "dcl account-wrapper " + (onClickAccount ? 'clickable' : ''), onClick: onClickAccount },
-                    mana != null ? (React.createElement(Mana_1.Mana, { size: "small", title: mana.toLocaleString() + " MANA" }, Math.floor(mana).toLocaleString())) : null,
+                    mana != null ? (React.createElement(Bean_1.Bean, { size: "small", title: mana.toLocaleString() + " MANA" }, Math.floor(mana).toLocaleString())) : null,
                     address != null ? React.createElement(Blockie_1.Blockie, { seed: address }) : null)));
         }
         else if (isConnecting && !isSignIn) {
@@ -107,12 +107,12 @@ var Navbar = /** @class */ (function (_super) {
                 React.createElement("div", { className: "dcl navbar-menu" },
                     React.createElement(Media_1.NotMobile, null,
                         React.createElement(Menu_1.default, { secondary: true, stackable: true },
-                            React.createElement("a", { className: "dcl navbar-logo", href: "https://decentraland.org" },
+                            React.createElement("a", { className: "dcl navbar-logo", href: "https://beland.io" },
                                 React.createElement(Logo_1.Logo, null)),
                             this.renderLeftMenu())),
                     React.createElement(Media_1.Mobile, null,
                         React.createElement("div", { className: "dcl navbar-mobile-menu" },
-                            React.createElement("a", { className: "dcl navbar-logo", href: "https://decentraland.org" },
+                            React.createElement("a", { className: "dcl navbar-logo", href: "https://beland.io" },
                                 React.createElement(Logo_1.Logo, null)),
                             React.createElement(Header_1.Header, { size: "small", className: "dcl active-page " + (this.state.toggle ? 'caret-up' : 'caret-down'), onClick: this.handleToggle }, activePage)))),
                 React.createElement("div", { className: "dcl navbar-account" }, this.renderRightMenu())),

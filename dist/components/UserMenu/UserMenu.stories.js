@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var schemas_1 = require("@dcl/schemas");
+var schemas_1 = require("@beland/schemas");
 var React = require("react");
 var MenuItem_1 = require("semantic-ui-react/dist/commonjs/collections/Menu/MenuItem");
 var Icon_1 = require("semantic-ui-react/dist/commonjs/elements/Icon/Icon");

@@ -26,12 +26,12 @@ var Profile = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Profile.prototype.render = function () {
-        var _a = this.props, address = _a.address, avatar = _a.avatar, textOnly = _a.textOnly, imageOnly = _a.imageOnly, hasPopup = _a.hasPopup, inline = _a.inline, size = _a.size, isDecentraland = _a.isDecentraland;
+        var _a = this.props, address = _a.address, avatar = _a.avatar, textOnly = _a.textOnly, imageOnly = _a.imageOnly, hasPopup = _a.hasPopup, inline = _a.inline, size = _a.size, isBeland = _a.isBeland;
         var name = (avatar && avatar.name) || address.slice(0, 6);
-        if (isDecentraland) {
-            return (React.createElement("span", { className: "Profile decentraland " + size + " " + (inline ? 'inline' : ''), title: address },
+        if (isBeland) {
+            return (React.createElement("span", { className: "Profile beland " + size + " " + (inline ? 'inline' : ''), title: address },
                 React.createElement(Logo_1.Logo, null),
-                imageOnly ? null : React.createElement("span", { className: "name" }, "Decentraland")));
+                imageOnly ? null : React.createElement("span", { className: "name" }, "Beland")));
         }
         if (textOnly) {
             return name;

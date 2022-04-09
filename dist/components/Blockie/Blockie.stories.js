@@ -4,7 +4,7 @@ var React = require("react");
 var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Address_1 = require("../Address/Address");
-var Mana_1 = require("../Mana/Mana");
+var Bean_1 = require("../Bean/Bean");
 var Blockie_1 = require("./Blockie");
 var address = '0x0F5D2fB29fb7d3CFeE444a200298f468908cC942';
 react_1.storiesOf('Blockie', module)
@@ -19,7 +19,7 @@ react_1.storiesOf('Blockie', module)
     React.createElement(Blockie_1.Blockie, { seed: address, scale: 21 }))); })
     .add('In a paragraph', function () { return (React.createElement("p", null,
     "You've transfered ",
-    React.createElement(Mana_1.Mana, { inline: true }, "1,000"),
+    React.createElement(Bean_1.Bean, { inline: true }, "1,000"),
     " to",
     ' ',
     React.createElement(Blockie_1.Blockie, { scale: 3, seed: address },

@@ -4,7 +4,7 @@ var React = require("react");
 var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var AvatarFace_1 = require("./AvatarFace");
-var Mana_1 = require("../Mana/Mana");
+var Bean_1 = require("../Bean/Bean");
 var avatar_1 = require("../../data/avatar");
 react_1.storiesOf('AvatarFace', module)
     .addDecorator(react_2.default)
@@ -16,7 +16,7 @@ react_1.storiesOf('AvatarFace', module)
     React.createElement(AvatarFace_1.AvatarFace, { size: "large", avatar: avatar_1.avatar }))); })
     .add('In a paragraph', function () { return (React.createElement("p", null,
     "You've transferred ",
-    React.createElement(Mana_1.Mana, { inline: true }, "1,000"),
+    React.createElement(Bean_1.Bean, { inline: true }, "1,000"),
     " to",
     ' ',
     React.createElement(AvatarFace_1.AvatarFace, { size: "tiny", inline: true, avatar: avatar_1.avatar }),

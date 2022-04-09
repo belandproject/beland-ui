@@ -33,7 +33,7 @@ require("./components/Popup/Popup.css");
 require("./components/Radio/Radio.css");
 require("./components/Segment/Segment.css");
 require("./components/Table/Table.css");
-// Decentraland components
+// Beland components
 __exportStar(require("./components/Address/Address"), exports);
 __exportStar(require("./components/Atlas/Atlas"), exports);
 __exportStar(require("./components/AvatarFace/AvatarFace"), exports);
@@ -53,7 +53,7 @@ __exportStar(require("./components/LanguageDropdown/LanguageDropdown"), exports)
 __exportStar(require("./components/LoginModal/LoginModal"), exports);
 __exportStar(require("./components/Logo/Logo"), exports);
 __exportStar(require("./components/Field/Field"), exports);
-__exportStar(require("./components/Mana/Mana"), exports);
+__exportStar(require("./components/Bean/Bean"), exports);
 __exportStar(require("./components/Message/Message"), exports);
 __exportStar(require("./components/ModalNavigation/ModalNavigation"), exports);
 __exportStar(require("./components/Narrow/Narrow"), exports);

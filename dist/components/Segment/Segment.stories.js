@@ -13,7 +13,7 @@ require("./Segment.stories.css");
 react_1.storiesOf('Segment', module)
     .addDecorator(react_2.default)
     .add('Single segment', function () { return (React.createElement(Segment_1.Segment, { style: { width: 400 } },
-    React.createElement(Header_1.Header, null, "Decentraland"),
+    React.createElement(Header_1.Header, null, "Beland"),
     React.createElement("p", { className: "secondary-text" }, "A virtual world built on open standards"),
     React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))); })
     .add('With field', function () { return (React.createElement(Segment_1.Segment, { style: { width: 800 } },

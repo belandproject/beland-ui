@@ -47,7 +47,7 @@ react_1.storiesOf('Navbar', module)
     return (React.createElement("div", { className: "Navbar-story-container" },
         React.createElement(Navbar_1.Navbar, { activePage: "dao", isFullscreen: true }),
         React.createElement(Hero_1.Hero, { height: 442, centered: true },
-            React.createElement(Hero_1.Hero.Header, null, "Help us build Decentraland"),
+            React.createElement(Hero_1.Hero.Header, null, "Help us build Beland"),
             React.createElement(Hero_1.Hero.Description, null, "Join the discussion"),
             React.createElement(Hero_1.Hero.Content, null,
                 React.createElement(Parallax_1.Parallax, null,
@@ -60,7 +60,7 @@ react_1.storiesOf('Navbar', module)
     return (React.createElement("div", { className: "Navbar-story-container" },
         React.createElement(Navbar_1.Navbar, { activePage: "dao", isFullscreen: true, isOverlay: true }),
         React.createElement(Hero_1.Hero, { className: "over-gradient", height: 442, centered: true },
-            React.createElement(Hero_1.Hero.Header, null, "Help us build Decentraland"),
+            React.createElement(Hero_1.Hero.Header, null, "Help us build Beland"),
             React.createElement(Hero_1.Hero.Description, null, "Join the discussion"),
             React.createElement(Hero_1.Hero.Content, null,
                 React.createElement("div", { className: "color-layer" })))));

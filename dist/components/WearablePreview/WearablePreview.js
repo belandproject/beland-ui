@@ -102,7 +102,7 @@ var WearablePreview = /** @class */ (function (_super) {
     };
     WearablePreview.defaultProps = {
         dev: false,
-        baseUrl: 'https://wearable-preview.decentraland.org',
+        baseUrl: 'https://wearable-preview.beland.io',
         onLoad: function () { },
         onError: function () { }
     };

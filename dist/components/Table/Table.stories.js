@@ -7,7 +7,7 @@ var Container_1 = require("../Container/Container");
 var HeaderMenu_1 = require("../HeaderMenu/HeaderMenu");
 var Header_1 = require("../Header/Header");
 var Dropdown_1 = require("../Dropdown/Dropdown");
-var Mana_1 = require("../Mana/Mana");
+var Bean_1 = require("../Bean/Bean");
 var Table_1 = require("./Table");
 require("./Table.stories.css");
 var rows = [
@@ -73,7 +73,7 @@ react_1.storiesOf('Table', module)
                 React.createElement(Table_1.Table.Cell, null,
                     React.createElement("a", { className: linkClass, href: "#" }, poll)),
                 React.createElement(Table_1.Table.Cell, { className: noLinkClass },
-                    React.createElement(Mana_1.Mana, { inline: true }),
+                    React.createElement(Bean_1.Bean, { inline: true }),
                     weight),
                 React.createElement(Table_1.Table.Cell, { className: noLinkClass }, voters),
                 React.createElement(Table_1.Table.Cell, { className: noLinkClass }, status),

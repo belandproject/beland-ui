@@ -35,28 +35,28 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Mana = void 0;
+exports.Bean = void 0;
 var React = require("react");
-var schemas_1 = require("@dcl/schemas");
+var schemas_1 = require("@beland/schemas");
 var Header_1 = require("../Header/Header");
-require("./Mana.css");
-var Mana = /** @class */ (function (_super) {
-    __extends(Mana, _super);
-    function Mana() {
+require("./Bean.css");
+var Bean = /** @class */ (function (_super) {
+    __extends(Bean, _super);
+    function Bean() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    Mana.prototype.render = function () {
+    Bean.prototype.render = function () {
         var _a = this.props, size = _a.size, className = _a.className, inline = _a.inline, children = _a.children, network = _a.network, rest = __rest(_a, ["size", "className", "inline", "children", "network"]);
-        var classes = ("dcl mana " + (inline ? 'inline ' : '') + className).trim();
+        var classes = ("beland bean " + (inline ? 'inline ' : '') + className).trim();
         return (React.createElement(Header_1.Header, __assign({ size: size, className: classes }, rest),
             React.createElement("i", { className: "symbol" },
                 React.createElement("i", { className: network.toLowerCase() })),
             children));
     };
-    Mana.defaultProps = {
+    Bean.defaultProps = {
         className: '',
         network: schemas_1.Network.ETHEREUM
     };
-    return Mana;
+    return Bean;
 }(React.Component));
-exports.Mana = Mana;
+exports.Bean = Bean;

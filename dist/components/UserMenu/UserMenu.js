@@ -18,7 +18,7 @@ var React = require("react");
 var Menu_1 = require("semantic-ui-react/dist/commonjs/collections/Menu");
 var Icon_1 = require("semantic-ui-react/dist/commonjs/elements/Icon");
 var AvatarFace_1 = require("../AvatarFace/AvatarFace");
-var Mana_1 = require("../Mana/Mana");
+var Bean_1 = require("../Bean/Bean");
 var Button_1 = require("../Button/Button");
 var Row_1 = require("../Row/Row");
 require("./UserMenu.css");
@@ -63,7 +63,7 @@ var UserMenu = /** @class */ (function (_super) {
             React.createElement(Menu_1.default.Item, { className: isActivity ? 'activity-bell active' : 'activity-bell' }, onClickActivity ? (React.createElement(Icon_1.default, { className: hasActivity ? 'pending' : '', name: "bell", onClick: onClickActivity })) : null),
             React.createElement("div", { className: "dcl user-menu", onBlur: this.handleClose, tabIndex: 0 },
                 isSignedIn && (React.createElement(React.Fragment, null,
-                    React.createElement("span", { className: "dcl account-wrapper" }, Object.keys(manaBalances).map(function (network) { return (React.createElement(Mana_1.Mana, { key: network, network: network, size: "small", className: onClickBalance ? 'clickable' : undefined, title: manaBalances[network].toLocaleString() + " MANA", href: "https://account.decentraland.org" }, Math.floor(manaBalances[network]).toLocaleString())); })),
+                    React.createElement("span", { className: "dcl account-wrapper" }, Object.keys(manaBalances).map(function (network) { return (React.createElement(Bean_1.Bean, { key: network, network: network, size: "small", className: onClickBalance ? 'clickable' : undefined, title: manaBalances[network].toLocaleString() + " MANA", href: "https://beland.io" }, Math.floor(manaBalances[network]).toLocaleString())); })),
                     React.createElement("div", { className: "toggle", onClick: this.handleToggle },
                         React.createElement(AvatarFace_1.AvatarFace, { size: "medium", avatar: avatar })),
                     React.createElement("div", { className: "menu " + (isOpen ? 'open' : '') + " " + (isClickable ? 'clickable' : '') },
@@ -73,7 +73,7 @@ var UserMenu = /** @class */ (function (_super) {
                             React.createElement("div", null,
                                 React.createElement("div", { className: "name" }, name || i18n.guest))),
                         React.createElement("ul", { className: "actions" },
-                            React.createElement("a", { href: "https://account.decentraland.org" },
+                            React.createElement("a", { href: "https://beland.io" },
                                 React.createElement("li", null,
                                     React.createElement(Icon_1.default, { name: "user" }),
                                     i18n.account)),

@@ -8,7 +8,7 @@ var Center_1 = require("../Center/Center");
 var Close_1 = require("../Close/Close");
 var Field_1 = require("../Field/Field");
 var Header_1 = require("../Header/Header");
-var Mana_1 = require("../Mana/Mana");
+var Bean_1 = require("../Bean/Bean");
 var ModalNavigation_1 = require("../ModalNavigation/ModalNavigation");
 var Radio_1 = require("../Radio/Radio");
 var Modal_1 = require("./Modal");
@@ -27,7 +27,7 @@ react_1.storiesOf('Modal', module)
         React.createElement(Modal_1.Modal.Content, null,
             "You are about to sell your soul for",
             ' ',
-            React.createElement(Mana_1.Mana, { inline: true }, (2500).toLocaleString()),
+            React.createElement(Bean_1.Bean, { inline: true }, (2500).toLocaleString()),
             ". Do you want to proceed?"),
         React.createElement(Modal_1.Modal.Actions, null,
             React.createElement(Button_1.Button, { primary: true }, "Proceed"),
@@ -39,7 +39,7 @@ react_1.storiesOf('Modal', module)
         React.createElement(Modal_1.Modal.Content, null,
             "You are about to sell your soul for",
             ' ',
-            React.createElement(Mana_1.Mana, { inline: true }, (2500).toLocaleString()),
+            React.createElement(Bean_1.Bean, { inline: true }, (2500).toLocaleString()),
             ". Do you want to proceed?"),
         React.createElement(Modal_1.Modal.Actions, null,
             React.createElement(Button_1.Button, { primary: true }, "Proceed"),
@@ -51,7 +51,7 @@ react_1.storiesOf('Modal', module)
         React.createElement(Modal_1.Modal.Content, null,
             "You are about to sell your soul for",
             ' ',
-            React.createElement(Mana_1.Mana, { inline: true }, (2500).toLocaleString()),
+            React.createElement(Bean_1.Bean, { inline: true }, (2500).toLocaleString()),
             ". Do you want to proceed?"),
         React.createElement(Modal_1.Modal.Actions, null,
             React.createElement(Button_1.Button, { primary: true }, "Proceed"),
