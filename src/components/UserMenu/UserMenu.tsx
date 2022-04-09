@@ -1,9 +1,9 @@
-import { Avatar, Network } from '@dcl/schemas'
+import { Avatar, Network } from '@beland/schemas'
 import * as React from 'react'
 import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu'
 import Icon from 'semantic-ui-react/dist/commonjs/elements/Icon'
 import { AvatarFace } from '../AvatarFace/AvatarFace'
-import { Mana } from '../Mana/Mana'
+import { Bean } from '../Bean/Bean'
 import { Button } from '../Button/Button'
 import { Row } from '../Row/Row'
 import './UserMenu.css'
@@ -125,16 +125,16 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
             <>
               <span className="dcl account-wrapper">
                 {Object.keys(manaBalances).map((network) => (
-                  <Mana
+                  <Bean
                     key={network}
                     network={network as Network}
                     size="small"
                     className={onClickBalance ? 'clickable' : undefined}
                     title={`${manaBalances[network].toLocaleString()} MANA`}
-                    href="https://account.decentraland.org"
+                    href="https://beland.io"
                   >
                     {Math.floor(manaBalances[network]).toLocaleString()}
-                  </Mana>
+                  </Bean>
                 ))}
               </span>
               <div className="toggle" onClick={this.handleToggle}>
@@ -157,7 +157,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
                   </div>
                 </div>
                 <ul className="actions">
-                  <a href="https://account.decentraland.org">
+                  <a href="https://beland.io">
                     <li>
                       <Icon name="user"></Icon>
                       {i18n.account}

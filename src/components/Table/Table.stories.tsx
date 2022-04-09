@@ -5,7 +5,7 @@ import { Container } from '../Container/Container'
 import { HeaderMenu } from '../HeaderMenu/HeaderMenu'
 import { Header } from '../Header/Header'
 import { Dropdown } from '../Dropdown/Dropdown'
-import { Mana } from '../Mana/Mana'
+import { Bean } from '../Bean/Bean'
 
 import { Table } from './Table'
 import './Table.stories.css'
@@ -85,7 +85,7 @@ storiesOf('Table', module)
                   </a>
                 </Table.Cell>
                 <Table.Cell className={noLinkClass}>
-                  <Mana inline />
+                  <Bean inline />
                   {weight}
                 </Table.Cell>
                 <Table.Cell className={noLinkClass}>{voters}</Table.Cell>

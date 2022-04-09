@@ -1,4 +1,4 @@
-import { Network } from '@dcl/schemas'
+import { Network } from '@beland/schemas'
 import * as React from 'react'
 import MenuItem from 'semantic-ui-react/dist/commonjs/collections/Menu/MenuItem'
 import Icon from 'semantic-ui-react/dist/commonjs/elements/Icon/Icon'

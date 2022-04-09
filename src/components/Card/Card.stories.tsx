@@ -6,7 +6,7 @@ import { Button } from '../Button/Button'
 import { Container } from '../Container/Container'
 import { Header } from '../Header/Header'
 import { HeaderMenu } from '../HeaderMenu/HeaderMenu'
-import { Mana } from '../Mana/Mana'
+import { Bean } from '../Bean/Bean'
 import { Card } from './Card'
 
 const cards = [
@@ -68,7 +68,7 @@ storiesOf('Card', module)
             <Card.Content>
               <Card.Header>{card.poll}</Card.Header>
               <Card.Meta>
-                Weight {card.weight} <Mana inline />
+                Weight {card.weight} <Bean inline />
               </Card.Meta>
             </Card.Content>
           </Card>

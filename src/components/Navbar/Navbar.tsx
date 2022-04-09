@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu'
-import { Mana } from '../Mana/Mana'
+import { Bean } from '../Bean/Bean'
 import { Blockie } from '../Blockie/Blockie'
 import { Container } from '../Container/Container'
 import { Header } from '../Header/Header'
@@ -112,37 +112,37 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
       <>
         <Menu.Item
           active={activePage === 'marketplace'}
-          href="https://market.decentraland.org"
+          href="https://market.beland.io"
         >
           {i18n.menu.marketplace}
         </Menu.Item>
         <Menu.Item
           active={activePage === 'builder'}
-          href="https://builder.decentraland.org"
+          href="https://builder.beland.io"
         >
           {i18n.menu.builder}
         </Menu.Item>
         <Menu.Item
           active={activePage === 'docs'}
-          href="https://docs.decentraland.org"
+          href="https://docs.beland.io"
         >
           {i18n.menu.docs}
         </Menu.Item>
         <Menu.Item
           active={activePage === 'events'}
-          href="https://events.decentraland.org"
+          href="https://events.beland.io"
         >
           {i18n.menu.events}
         </Menu.Item>
         <Menu.Item
           active={activePage === 'dao'}
-          href="https://dao.decentraland.org"
+          href="https://dao.beland.io"
         >
           {i18n.menu.dao}
         </Menu.Item>
         <Menu.Item
           active={activePage === 'blog'}
-          href="https://decentraland.org/blog"
+          href="https://blog.beland.io"
         >
           {i18n.menu.blog}
         </Menu.Item>
@@ -182,9 +182,9 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
             onClick={onClickAccount}
           >
             {mana != null ? (
-              <Mana size="small" title={`${mana.toLocaleString()} MANA`}>
+              <Bean size="small" title={`${mana.toLocaleString()} MANA`}>
                 {Math.floor(mana).toLocaleString()}
-              </Mana>
+              </Bean>
             ) : null}
             {address != null ? <Blockie seed={address} /> : null}
           </span>
@@ -241,7 +241,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
           <div className="dcl navbar-menu">
             <NotMobile>
               <Menu secondary stackable>
-                <a className="dcl navbar-logo" href="https://decentraland.org">
+                <a className="dcl navbar-logo" href="https://beland.io">
                   <Logo />
                 </a>
                 {this.renderLeftMenu()}
@@ -249,7 +249,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
             </NotMobile>
             <Mobile>
               <div className="dcl navbar-mobile-menu">
-                <a className="dcl navbar-logo" href="https://decentraland.org">
+                <a className="dcl navbar-logo" href="https://beland.io">
                   <Logo />
                 </a>
                 <Header

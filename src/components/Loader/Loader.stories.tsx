@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ProviderType } from '@dcl/schemas/dist/dapps/provider-type'
+import { ProviderType } from '@beland/schemas/dist/dapps/provider-type'
 import { storiesOf } from '@storybook/react'
 import centered from '@storybook/addon-centered/react'
 import { Loader } from './Loader'

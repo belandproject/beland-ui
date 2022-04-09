@@ -1,1 +1,0 @@
-import './WearablePreview.stories.css';

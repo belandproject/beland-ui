@@ -24,7 +24,7 @@ type WearablePreviewProps = {
 export class WearablePreview extends React.PureComponent<WearablePreviewProps> {
   static defaultProps = {
     dev: false,
-    baseUrl: 'https://wearable-preview.decentraland.org',
+    baseUrl: 'https://wearable-preview.beland.io',
     onLoad: () => {},
     onError: () => {}
   }

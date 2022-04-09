@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Avatar } from '@dcl/schemas'
+import { Avatar } from '@beland/schemas'
 import { Logo } from '../Logo/Logo'
 import { Popup } from '../Popup/Popup'
 import { AvatarFace } from '../AvatarFace/AvatarFace'
@@ -14,7 +14,7 @@ export type ProfileProps = {
   hasPopup?: boolean
   inline?: boolean
   size?: 'normal' | 'large' | 'huge' | 'massive'
-  isDecentraland?: boolean
+  isBeland?: boolean
 }
 
 export class Profile extends React.PureComponent<ProfileProps> {
@@ -32,18 +32,18 @@ export class Profile extends React.PureComponent<ProfileProps> {
       hasPopup,
       inline,
       size,
-      isDecentraland
+      isBeland
     } = this.props
     const name = (avatar && avatar.name) || address.slice(0, 6)
 
-    if (isDecentraland) {
+    if (isBeland) {
       return (
         <span
-          className={`Profile decentraland ${size} ${inline ? 'inline' : ''}`}
+          className={`Profile beland ${size} ${inline ? 'inline' : ''}`}
           title={address}
         >
           <Logo />
-          {imageOnly ? null : <span className="name">Decentraland</span>}
+          {imageOnly ? null : <span className="name">Beland</span>}
         </span>
       )
     }

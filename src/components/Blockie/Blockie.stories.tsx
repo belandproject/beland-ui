@@ -2,7 +2,7 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import centered from '@storybook/addon-centered/react'
 import { Address } from '../Address/Address'
-import { Mana } from '../Mana/Mana'
+import { Bean } from '../Bean/Bean'
 import { Blockie } from './Blockie'
 
 const address = '0x0F5D2fB29fb7d3CFeE444a200298f468908cC942'
@@ -22,7 +22,7 @@ storiesOf('Blockie', module)
   ))
   .add('In a paragraph', () => (
     <p>
-      You've transfered <Mana inline>1,000</Mana> to{' '}
+      You've transfered <Bean inline>1,000</Bean> to{' '}
       <Blockie scale={3} seed={address}>
         <Address value={address} strong />
       </Blockie>

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import centered from '@storybook/addon-centered/react'
 import { Profile } from './Profile'
-import { Mana } from '../Mana/Mana'
+import { Bean } from '../Bean/Bean'
 import { avatar } from '../../data/avatar'
 
 storiesOf('Profile', module)
@@ -29,14 +29,14 @@ storiesOf('Profile', module)
   ))
   .add('Inline', () => (
     <>
-      You sent <Mana inline>1,000</Mana> to{' '}
+      You sent <Bean inline>1,000</Bean> to{' '}
       <Profile address="0xdeadbeef" avatar={avatar} inline />
     </>
   ))
-  .add('Decentraland', () => (
+  .add('Beland', () => (
     <>
-      You sent <Mana inline>1,000</Mana> to{' '}
-      <Profile address="0xdeadbeef" avatar={avatar} inline isDecentraland />
+      You sent <Bean inline>1,000</Bean> to{' '}
+      <Profile address="0xdeadbeef" avatar={avatar} inline isBeland />
     </>
   ))
   .add('Sizes', () => (
@@ -75,7 +75,7 @@ storiesOf('Profile', module)
         inline={false}
         size="normal"
         imageOnly
-        isDecentraland
+        isBeland
       />
       <Profile
         address="0xdeadbeef"
@@ -83,7 +83,7 @@ storiesOf('Profile', module)
         inline={false}
         size="large"
         imageOnly
-        isDecentraland
+        isBeland
       />
       <Profile
         address="0xdeadbeef"
@@ -91,7 +91,7 @@ storiesOf('Profile', module)
         inline={false}
         size="huge"
         imageOnly
-        isDecentraland
+        isBeland
       />
       <Profile
         address="0xdeadbeef"
@@ -99,7 +99,7 @@ storiesOf('Profile', module)
         inline={false}
         size="massive"
         imageOnly
-        isDecentraland
+        isBeland
       />
       <Profile address="0xdeadbeef" inline={false} size="normal" imageOnly />
       <Profile address="0xdeadbeef" inline={false} size="large" imageOnly />

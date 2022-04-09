@@ -26,7 +26,7 @@ import './components/Radio/Radio.css'
 import './components/Segment/Segment.css'
 import './components/Table/Table.css'
 
-// Decentraland components
+// Beland components
 export * from './components/Address/Address'
 export * from './components/Atlas/Atlas'
 export * from './components/AvatarFace/AvatarFace'
@@ -46,7 +46,7 @@ export * from './components/LanguageDropdown/LanguageDropdown'
 export * from './components/LoginModal/LoginModal'
 export * from './components/Logo/Logo'
 export * from './components/Field/Field'
-export * from './components/Mana/Mana'
+export * from './components/Bean/Bean'
 export * from './components/Message/Message'
 export * from './components/ModalNavigation/ModalNavigation'
 export * from './components/Narrow/Narrow'

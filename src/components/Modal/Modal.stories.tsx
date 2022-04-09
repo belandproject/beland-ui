@@ -6,7 +6,7 @@ import { Center } from '../Center/Center'
 import { Close } from '../Close/Close'
 import { Field } from '../Field/Field'
 import { Header } from '../Header/Header'
-import { Mana } from '../Mana/Mana'
+import { Bean } from '../Bean/Bean'
 import { ModalNavigation } from '../ModalNavigation/ModalNavigation'
 import { Radio } from '../Radio/Radio'
 
@@ -62,7 +62,7 @@ storiesOf('Modal', module)
         <Modal.Header>Are you sure?</Modal.Header>
         <Modal.Content>
           You are about to sell your soul for{' '}
-          <Mana inline>{(2500).toLocaleString()}</Mana>. Do you want to proceed?
+          <Bean inline>{(2500).toLocaleString()}</Bean>. Do you want to proceed?
         </Modal.Content>
         <Modal.Actions>
           <Button primary>Proceed</Button>
@@ -78,7 +78,7 @@ storiesOf('Modal', module)
         <Modal.Header>Are you sure?</Modal.Header>
         <Modal.Content>
           You are about to sell your soul for{' '}
-          <Mana inline>{(2500).toLocaleString()}</Mana>. Do you want to proceed?
+          <Bean inline>{(2500).toLocaleString()}</Bean>. Do you want to proceed?
         </Modal.Content>
         <Modal.Actions>
           <Button primary>Proceed</Button>
@@ -94,7 +94,7 @@ storiesOf('Modal', module)
         <Modal.Header>Are you sure?</Modal.Header>
         <Modal.Content>
           You are about to sell your soul for{' '}
-          <Mana inline>{(2500).toLocaleString()}</Mana>. Do you want to proceed?
+          <Bean inline>{(2500).toLocaleString()}</Bean>. Do you want to proceed?
         </Modal.Content>
         <Modal.Actions>
           <Button primary>Proceed</Button>
