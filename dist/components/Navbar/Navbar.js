@@ -47,7 +47,7 @@ var Navbar = /** @class */ (function (_super) {
         document.removeEventListener('click', this.handleDocumentClick);
     };
     Navbar.prototype.renderLeftMenu = function () {
-        var _a = this.props, activePage = _a.activePage, i18n = _a.i18n, leftMenu = _a.leftMenu;
+        var _a = this.props, leftMenu = _a.leftMenu, activePage = _a.activePage, i18n = _a.i18n;
         if (leftMenu) {
             return leftMenu;
         }
@@ -108,14 +108,17 @@ var Navbar = /** @class */ (function (_super) {
                     React.createElement(Media_1.NotMobile, null,
                         React.createElement(Menu_1.default, { secondary: true, stackable: true },
                             React.createElement("a", { className: "dcl navbar-logo", href: "https://beland.io" },
-                                React.createElement(Logo_1.Logo, null)),
-                            this.renderLeftMenu())),
+                                React.createElement(Logo_1.Logo, null)))),
                     React.createElement(Media_1.Mobile, null,
                         React.createElement("div", { className: "dcl navbar-mobile-menu" },
                             React.createElement("a", { className: "dcl navbar-logo", href: "https://beland.io" },
                                 React.createElement(Logo_1.Logo, null)),
                             React.createElement(Header_1.Header, { size: "small", className: "dcl active-page " + (this.state.toggle ? 'caret-up' : 'caret-down'), onClick: this.handleToggle }, activePage)))),
-                React.createElement("div", { className: "dcl navbar-account" }, this.renderRightMenu())),
+                React.createElement("div", { className: "dcl navbar-account" },
+                    React.createElement(Media_1.NotMobile, null,
+                        React.createElement(Menu_1.default, { secondary: true, stackable: true },
+                            React.createElement("div", { className: "desktop-menu" }, this.renderLeftMenu()))),
+                    this.renderRightMenu())),
             React.createElement("div", { className: "mobile-menu" }, this.renderLeftMenu())));
     };
     Navbar.defaultProps = {

@@ -62,9 +62,10 @@ const LIGHT_THEME = `
 const DARK_THEME = `
 :root {
   /* global */
-  --background: #18141a;
+  --background: #28293D;
   --danger: #ffa900;
   --error: #ff0000;
+  --fore-background: #2D2F45;
 
   /* buttons */
   --primary: #ff2d55;
@@ -78,10 +79,10 @@ const DARK_THEME = `
   --card-on-modal: #67637033;
 
   /* text */
-  --text: #ffffff;
-  --secondary-text: #676370;
-  --text-on-primary: #ffffff;
-  --text-on-secondary: #ffffff;
+  --text: #FEFEFE;
+  --secondary-text: rgba(254, 254, 254, 0.24);
+  --text-on-primary: #FEFEFE;
+  --text-on-secondary: #FEFEFE;
 
   /* ui */
   --divider: #67637033;
@@ -106,6 +107,8 @@ const DARK_THEME = `
   --shadow-color-1: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
   --shadow-color-2: 0px 10px 20px 0px rgba(0, 0, 0, 0.24);
   --shadow-color-3: 0px 16px 32px 0px rgba(0, 0, 0, 0.32);
+
+  --shadow-card-1: 0px 0px 2px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.32);
 
   /* svgs */
   --brightness: brightness(100); /* black svgs */

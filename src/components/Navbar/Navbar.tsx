@@ -104,7 +104,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
   }
 
   renderLeftMenu(): React.ReactNode {
-    const { activePage, i18n, leftMenu } = this.props
+    const { leftMenu, activePage, i18n } = this.props
     if (leftMenu) {
       return leftMenu
     }
@@ -146,7 +146,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
         >
           {i18n.menu.blog}
         </Menu.Item>
-      </>
+        </>
     )
   }
 
@@ -244,7 +244,6 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
                 <a className="dcl navbar-logo" href="https://beland.io">
                   <Logo />
                 </a>
-                {this.renderLeftMenu()}
               </Menu>
             </NotMobile>
             <Mobile>
@@ -264,8 +263,14 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
               </div>
             </Mobile>
           </div>
-
-          <div className="dcl navbar-account">{this.renderRightMenu()}</div>
+          <div className="dcl navbar-account">
+            <NotMobile>
+              <Menu secondary stackable>
+                <div className="desktop-menu">{this.renderLeftMenu()}</div>
+              </Menu>
+            </NotMobile>
+            {this.renderRightMenu()}
+          </div>
         </Container>
         <div className="mobile-menu">{this.renderLeftMenu()}</div>
       </div>
