@@ -2253,13 +2253,19 @@ a.ui.card:hover,
   opacity: 0.5;
 }
 
-.be.logo {
-  vertical-align: middle;
+.dcl.logo {
+  display: inline-block;
+  width: 126px;
+  height: 24px;
+  background-image: url(1a2c1a4ab5b41071d8f5fe705fdd1f6f.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
-  .be.logo {
-    height: 20px;
+  .dcl.logo {
+    width: 126px;
+    height: 24px;
   }
 }
 

@@ -1,9 +1,15 @@
-.be.logo {
-  vertical-align: middle;
+.dcl.logo {
+  display: inline-block;
+  width: 126px;
+  height: 24px;
+  background-image: url('../../assets/logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
-  .be.logo {
-    height: 20px;
+  .dcl.logo {
+    width: 126px;
+    height: 24px;
   }
 }

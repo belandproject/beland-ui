@@ -16,14 +16,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Logo = void 0;
 var React = require("react");
 require("./Logo.css");
-var beland_logo = require('../../assets/logo.svg');
 var Logo = /** @class */ (function (_super) {
     __extends(Logo, _super);
     function Logo() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Logo.prototype.render = function () {
-        return React.createElement("img", { className: 'be logo', src: beland_logo, alt: "" });
+        return React.createElement("i", { className: "dcl logo" });
     };
     return Logo;
 }(React.PureComponent));
