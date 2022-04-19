@@ -716,7 +716,7 @@ a:hover {
 
 @media only screen and (min-width: 1200px) {
   .ui.container {
-    width: 1064px;
+    width: 100%;
   }
 }
 
@@ -2622,7 +2622,7 @@ a.ui.card:hover,
   }
 
   .dcl.navbar .ui.container {
-    /* width: calc(100% - 32px) !important; */
+    width: calc(100%) !important;
     padding: 0px 16px;
     margin: 0px !important;
   }
