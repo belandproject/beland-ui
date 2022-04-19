@@ -7,6 +7,5 @@
   background-size: contain;
   width: 16px;
   height: 16px;
-  -webkit-filter: var(--brightness);
-          filter: var(--brightness);
+  filter: var(--brightness);
 }

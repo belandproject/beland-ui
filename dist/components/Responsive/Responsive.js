@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -97,7 +99,7 @@ var Responsive = /** @class */ (function (_super) {
     Responsive.prototype.render = function () {
         var children = this.props.children;
         var visible = this.state.visible;
-        var ElementType = lib_1.getElementType(Responsive, this.props);
+        var ElementType = (0, lib_1.getElementType)(Responsive, this.props);
         var rest = this.cleanProps(this.props);
         if (visible)
             return React.createElement(ElementType, __assign({}, rest), children);
@@ -109,7 +111,7 @@ var Responsive = /** @class */ (function (_super) {
     Responsive.onlyLargeScreen = { minWidth: 1200, maxWidth: 1919 };
     Responsive.onlyWidescreen = { minWidth: 1920 };
     Responsive.defaultProps = {
-        getWidth: function () { return (lib_1.isBrowser() ? window.innerWidth : 0); }
+        getWidth: function () { return ((0, lib_1.isBrowser)() ? window.innerWidth : 0); }
     };
     return Responsive;
 }(React.Component));

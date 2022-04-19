@@ -8,7 +8,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var UserMenu_1 = require("./UserMenu");
 var avatar_1 = require("../../data/avatar");
-react_1.storiesOf('UserMenu', module)
+(0, react_1.storiesOf)('UserMenu', module)
     .addDecorator(react_2.default)
     .add('Signed out', function () { return React.createElement(UserMenu_1.UserMenu, null); })
     .add('Signed in', function () { return React.createElement(UserMenu_1.UserMenu, { isSignedIn: true, avatar: avatar_1.avatar }); })

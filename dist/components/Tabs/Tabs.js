@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -16,7 +18,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Tabs = void 0;
 var React = require("react");
 var Media_1 = require("../Media");
-var Container_1 = require("../Container/Container");
 require("./Tabs.css");
 var Tabs = /** @class */ (function (_super) {
     __extends(Tabs, _super);
@@ -25,9 +26,8 @@ var Tabs = /** @class */ (function (_super) {
     }
     Tabs.prototype.render = function () {
         var _a = this.props, children = _a.children, isFullscreen = _a.isFullscreen, onClick = _a.onClick;
-        return (React.createElement("div", { className: "dcl tabs " + (isFullscreen ? 'fullscreen' : ''), onClick: onClick },
-            React.createElement(Media_1.NotMobile, null,
-                React.createElement(Container_1.Container, null, children)),
+        return (React.createElement("div", { className: "dcl tabs ".concat(isFullscreen ? 'fullscreen' : ''), onClick: onClick },
+            React.createElement(Media_1.NotMobile, null, children),
             React.createElement(Media_1.Mobile, null, children)));
     };
     Tabs.defaultProps = {
@@ -43,7 +43,7 @@ var Tabs = /** @class */ (function (_super) {
     };
     Tabs.Tab = function (_a) {
         var active = _a.active, onClick = _a.onClick, children = _a.children;
-        return (React.createElement("div", { className: "dcl tab " + (active ? 'active' : ''), onClick: onClick },
+        return (React.createElement("div", { className: "dcl tab ".concat(active ? 'active' : ''), onClick: onClick },
             children,
             active ? React.createElement("div", { className: "active-bar" }) : null));
     };

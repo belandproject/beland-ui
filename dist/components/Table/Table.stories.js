@@ -47,7 +47,7 @@ var rows = [
         outcome: 'No'
     }
 ];
-react_1.storiesOf('Table', module)
+(0, react_1.storiesOf)('Table', module)
     .addDecorator(react_2.default)
     .add('Polls', function () { return (React.createElement(Container_1.Container, null,
     React.createElement(HeaderMenu_1.HeaderMenu, null,

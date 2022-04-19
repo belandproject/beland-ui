@@ -6,7 +6,7 @@ var react_2 = require("@storybook/addon-centered/react");
 var AvatarFace_1 = require("./AvatarFace");
 var Bean_1 = require("../Bean/Bean");
 var avatar_1 = require("../../data/avatar");
-react_1.storiesOf('AvatarFace', module)
+(0, react_1.storiesOf)('AvatarFace', module)
     .addDecorator(react_2.default)
     .add('Single', function () { return React.createElement(AvatarFace_1.AvatarFace, { size: "large", avatar: avatar_1.avatar }); })
     .add('Sizes', function () { return (React.createElement(React.Fragment, null,

@@ -5,7 +5,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Center_1 = require("./Center");
 require("./Center.stories.css");
-react_1.storiesOf('Center', module)
+(0, react_1.storiesOf)('Center', module)
     .addDecorator(react_2.default)
     .add('On Parent', function () { return (React.createElement(React.Fragment, null,
     React.createElement("div", { className: "story-container" }),

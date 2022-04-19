@@ -5,7 +5,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Tabs_1 = require("./Tabs");
 require("./Tabs.stories.css");
-react_1.storiesOf('Tabs', module)
+(0, react_1.storiesOf)('Tabs', module)
     .addDecorator(react_2.default)
     .add('Basic', function () { return (React.createElement("div", { className: "Tabs-story-container" },
     React.createElement(Tabs_1.Tabs, null,

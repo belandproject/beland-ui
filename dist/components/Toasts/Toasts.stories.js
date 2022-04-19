@@ -5,7 +5,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Toast_1 = require("../Toast/Toast");
 var Toasts_1 = require("./Toasts");
-react_1.storiesOf('Toasts', module)
+(0, react_1.storiesOf)('Toasts', module)
     .addDecorator(react_2.default)
     .add('Lists toasts', function () { return (React.createElement(Toasts_1.Toasts, null,
     React.createElement(Toast_1.Toast, { title: "Title 1", body: "Body 1" }),

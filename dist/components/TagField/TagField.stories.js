@@ -4,7 +4,7 @@ var React = require("react");
 var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var TagField_1 = require("./TagField");
-react_1.storiesOf('TagField', module)
+(0, react_1.storiesOf)('TagField', module)
     .addDecorator(react_2.default)
     .add('Basic', function () { return (React.createElement(React.Fragment, null,
     React.createElement(TagField_1.TagField, { label: "Tags (optional)", placeholder: "e.g. (outdoors furniture floor)" }))); })

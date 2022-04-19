@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -29,7 +31,7 @@ var Profile = /** @class */ (function (_super) {
         var _a = this.props, address = _a.address, avatar = _a.avatar, textOnly = _a.textOnly, imageOnly = _a.imageOnly, hasPopup = _a.hasPopup, inline = _a.inline, size = _a.size, isBeland = _a.isBeland;
         var name = (avatar && avatar.name) || address.slice(0, 6);
         if (isBeland) {
-            return (React.createElement("span", { className: "Profile beland " + size + " " + (inline ? 'inline' : ''), title: address },
+            return (React.createElement("span", { className: "Profile beland ".concat(size, " ").concat(inline ? 'inline' : ''), title: address },
                 React.createElement(Logo_1.Logo, null),
                 imageOnly ? null : React.createElement("span", { className: "name" }, "Beland")));
         }
@@ -37,9 +39,9 @@ var Profile = /** @class */ (function (_super) {
             return name;
         }
         else {
-            return (React.createElement(Popup_1.Popup, { content: name, disabled: !hasPopup, position: "top center", trigger: avatar ? (React.createElement("span", { className: "Profile avatar " + size + " " + (inline ? 'inline' : ''), title: address },
+            return (React.createElement(Popup_1.Popup, { content: name, disabled: !hasPopup, position: "top center", trigger: avatar ? (React.createElement("span", { className: "Profile avatar ".concat(size, " ").concat(inline ? 'inline' : ''), title: address },
                     React.createElement(AvatarFace_1.AvatarFace, { size: "tiny", inline: inline, avatar: avatar }),
-                    imageOnly ? null : React.createElement("span", { className: "name" }, name))) : (React.createElement("span", { className: "Profile blockie " + size + " " + (inline ? 'inline' : ''), title: address },
+                    imageOnly ? null : React.createElement("span", { className: "name" }, name))) : (React.createElement("span", { className: "Profile blockie ".concat(size, " ").concat(inline ? 'inline' : ''), title: address },
                     React.createElement(Blockie_1.Blockie, { seed: address, scale: size === 'large'
                             ? 5
                             : size === 'huge'

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Mobile, NotMobile } from '../Media'
-import { Container } from '../Container/Container'
 import './Tabs.css'
 
 export type TabsProps = {
@@ -43,7 +42,7 @@ export class Tabs extends React.PureComponent<TabsProps> {
         onClick={onClick}
       >
         <NotMobile>
-          <Container>{children}</Container>
+          {children}
         </NotMobile>
         <Mobile>{children}</Mobile>
       </div>

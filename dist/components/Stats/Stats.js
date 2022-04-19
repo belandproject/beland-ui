@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -24,7 +26,7 @@ var Stats = /** @class */ (function (_super) {
     }
     Stats.prototype.render = function () {
         var _a = this.props, title = _a.title, className = _a.className, children = _a.children;
-        var classes = ("dcl stats " + className).trim();
+        var classes = "dcl stats ".concat(className).trim();
         return (React.createElement("span", { className: classes },
             React.createElement(Header_1.Header, { sub: true }, title),
             typeof children === 'string' ? React.createElement(Header_1.Header, null, children) : children));

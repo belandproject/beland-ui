@@ -7,13 +7,13 @@ var react_2 = require("@storybook/addon-centered/react");
 var Button_1 = require("./Button");
 require("./Button.stories.css");
 var Row_1 = require("../Row/Row");
-react_1.storiesOf('Button', module)
+(0, react_1.storiesOf)('Button', module)
     .addDecorator(react_2.default)
     .add('Primary', function () { return (React.createElement(Row_1.Row, null,
     React.createElement(Button_1.Button, { primary: true }, "Vote Now"),
     React.createElement(Button_1.Button, { primary: true, disabled: true }, "Vote Now"))); })
     .add('Secondary', function () { return (React.createElement(Row_1.Row, null,
-    React.createElement(Button_1.Button, null, "Cancel"),
+    React.createElement(Button_1.Button, { secondary: true }, "Cancel"),
     React.createElement(Button_1.Button, { disabled: true }, "Cancel"))); })
     .add('Basic', function () { return (React.createElement(Row_1.Row, null,
     React.createElement(Button_1.Button, { basic: true }, "Download"),

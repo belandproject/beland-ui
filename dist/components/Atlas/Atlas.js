@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -70,12 +72,14 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-var __spreadArrays = (this && this.__spreadArrays) || function () {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Atlas = void 0;
@@ -148,27 +152,29 @@ var Atlas = /** @class */ (function (_super) {
         this.mounted = false;
     };
     Atlas.prototype.render = function () {
-        var _a = this.props, layers = _a.layers, className = _a.className, rest = __rest(_a, ["layers", "className"]);
+        var _b = this.props, layers = _b.layers, className = _b.className, rest = __rest(_b, ["layers", "className"]);
         var classes = 'dcl atlas ' + className;
-        return (React.createElement(react_tile_map_1.TileMap, __assign({}, rest, { className: classes.trim(), layers: __spreadArrays([this.layer], layers) })));
+        return (React.createElement(react_tile_map_1.TileMap, __assign({}, rest, { className: classes.trim(), layers: __spreadArray([this.layer], layers, true) })));
     };
+    var _a;
+    _a = Atlas;
     Atlas.defaultProps = __assign(__assign({}, react_tile_map_1.TileMap.defaultProps), { layers: [] });
     Atlas.TILES_URL = 'https://api.beland.io/v1/tiles';
     Atlas.fetchTiles = function (url) {
         if (url === void 0) { url = Atlas.TILES_URL; }
         return __awaiter(void 0, void 0, void 0, function () {
             var resp, json;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
+            return __generator(_a, function (_b) {
+                switch (_b.label) {
                     case 0:
                         if (!window.fetch)
                             return [2 /*return*/, {}];
                         return [4 /*yield*/, window.fetch(url)];
                     case 1:
-                        resp = _a.sent();
+                        resp = _b.sent();
                         return [4 /*yield*/, resp.json()];
                     case 2:
-                        json = _a.sent();
+                        json = _b.sent();
                         return [2 /*return*/, json.data];
                 }
             });

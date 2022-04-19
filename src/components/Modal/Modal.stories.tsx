@@ -66,7 +66,7 @@ storiesOf('Modal', module)
         </Modal.Content>
         <Modal.Actions>
           <Button primary>Proceed</Button>
-          <Button>Cancel</Button>
+          <Button secondary>Cancel</Button>
         </Modal.Actions>
       </Modal>
     </div>

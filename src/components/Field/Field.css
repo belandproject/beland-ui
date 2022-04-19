@@ -11,24 +11,17 @@
 
 .dcl.field .ui.input input,
 .ui.form .dcl.field .ui.input input {
-  padding: 0px;
-  padding-bottom: 12px;
-  padding-top: 4px;
-  font-size: 20px;
+  margin-top: 8px;
+  padding: 12px;
+  font-size: 16px;
   line-height: 28px;
   font-weight: 500;
   border: none;
-  border-bottom: 2px solid var(--divider);
+  border: 2px solid var(--divider);
   border-radius: 0px;
   color: var(--text);
-  background: transparent;
-}
-
-.dcl.field .ui.input input:focus,
-.dcl.field .ui.input input:active,
-.ui.form .dcl.field .ui.input input:focus,
-.ui.form .dcl.field .ui.input input:active {
-  border-bottom: 2px solid var(--text);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .dcl.field .message,
@@ -43,7 +36,7 @@
 .dcl.field .ui.input.loading > i.icon,
 .ui.form .dcl.field .ui.input.loading > i.icon {
   opacity: 1;
-  height: 36px;
+  /* height: 36px; */
 }
 .dcl.field .ui.input.loading > i.icon:before,
 .ui.form .dcl.field .ui.input.loading > i.icon:before {
@@ -74,7 +67,7 @@
 
 .dcl.field.error .ui.input input,
 .ui.form .dcl.field.error .ui.input input {
-  border-bottom: 2px solid var(--error);
+  border: 2px solid var(--error);
 }
 
 .dcl.field.error .message,
@@ -82,24 +75,6 @@
   color: var(--error);
 }
 
-.dcl.field.error .ui.header.sub,
-.ui.form .dcl.field.error .ui.header.sub {
-  color: var(--error);
-}
-
-.dcl.field.error .ui.input > i.icon,
-.ui.form .dcl.field.error .ui.input > i.icon {
-  opacity: 1;
-  background: url('../../assets/alert.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 36px;
-}
-.dcl.field.error .ui.input > i.icon:before,
-.ui.form .dcl.field.error .ui.input > i.icon:before {
-  content: '';
-  display: none;
-}
 
 /* Address */
 
@@ -119,7 +94,8 @@
 
 .dcl.field.address.has-label .dcl.blockie,
 .ui.form .dcl.field.address.has-label .dcl.blockie {
-  top: 28px;
+  top: calc(50% - 12px);
+  right: 10px;
 }
 
 .dcl.field .overlay,

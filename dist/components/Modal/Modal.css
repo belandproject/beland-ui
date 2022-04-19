@@ -1,5 +1,5 @@
 :root {
-  --modal-border-radius: 12px;
+  --modal-border-radius: 20px;
 }
 
 .ui.modal,
@@ -23,7 +23,7 @@
 
 .ui.modal > .header,
 .ui.modal > .ui.form > .header {
-  color: var(--text);
+  color: var(--text-on-primary);
   border-bottom: none;
 }
 .ui.modal > .actions,
@@ -74,9 +74,9 @@
 .ui.small.modal > .header:not(.ui),
 .ui.small.modal > .ui.form > .header:not(.ui) {
   font-family: var(--font-print);
-  font-size: 28px;
+  font-size: 32px;
   line-height: 34px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .ui.modal > .description,
@@ -86,7 +86,7 @@
   margin-right: 32px;
   margin-top: 0px;
   margin-bottom: 2px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 26px;
   letter-spacing: -0.2px;
   font-weight: 200;
@@ -130,12 +130,6 @@
 .ui.modal > .ui.form > .actions > .ui.button:not(.primary):hover,
 .ui.modal .ui.button:not(.primary):hover {
   background-color: var(--secondary-on-modal-hover);
-}
-
-/* input */
-
-.ui.modal .field .ui.input input {
-  border-bottom-color: var(--secondary-on-modal);
 }
 
 /* radio */

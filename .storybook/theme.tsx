@@ -38,7 +38,7 @@ const LIGHT_THEME = `
   --popup-text: #ffffff;
   --navbar-popup: #ffffff;
   --navbar-popup-hover: #f3f2f5;
-  --card: #ffffff;
+  --card: #3E405B;
   --outline: 1px solid #00000005;
   --toast: #16141a;
   --toast-text: #ffffff;
@@ -46,7 +46,7 @@ const LIGHT_THEME = `
   --dimmer: #ffffffdd;
 
   /* shadows */
-  --shadow-1: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  --shadow-1: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 1px 2px rgba(0, 0, 0, 0.32);
   --shadow-2: 0px 10px 20px 0px rgba(0, 0, 0, 0.12);
   --shadow-3: 0px 16px 32px 0px rgba(0, 0, 0, 0.16);
 
@@ -64,14 +64,17 @@ const DARK_THEME = `
   /* global */
   --background: #28293D;
   --danger: #ffa900;
-  --error: #ff0000;
+  --error: rgba(255, 65, 92, 1);
   --fore-background: #2D2F45;
 
   /* buttons */
-  --primary: #ff2d55;
-  --secondary: #242129;
+  --primary: #1EB4F5;
+  --secondary: #6E7198;
   --primary-hover: #ff3d61;
   --secondary-hover: #28262c;
+
+  --button-primary-linear: linear-gradient(180deg, #5561FF 0%, #3643FC 100%, #3643FC 100%);
+  --button-text-on-primary: rgba(254, 254, 254, 0.87);
 
   /* within modals */
   --secondary-on-modal: #67637033;
@@ -79,30 +82,30 @@ const DARK_THEME = `
   --card-on-modal: #67637033;
 
   /* text */
-  --text: #FEFEFE;
+  --text: rgba(254, 254, 254, 0.52);
   --secondary-text: rgba(254, 254, 254, 0.24);
   --text-on-primary: #FEFEFE;
-  --text-on-secondary: #FEFEFE;
+  --text-on-secondary: rgba(254, 254, 254, 0.87);
 
   /* ui */
-  --divider: #67637033;
+  --divider: #6E7198;
   --dropdown: #676370;
   --dropdown-hover: #24212933;
   --popup: #676370;
   --popup-text: #ffffff;
   --navbar-popup: #242129;
   --navbar-popup-hover: #67637033;
-  --card: #242129;
+  --card: #3E405B;
   --outline: 1px solid #00000005;
   --toast: #38333d;
   --toast-text: #ffffff;
-  --modal: #242129;
+  --modal: #3E405B;
   --dimmer: #000000dd;
 
   /* shadows */
-  --shadow-1: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  --shadow-1: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 1px 2px rgba(0, 0, 0, 0.32);
   --shadow-2: 0px 10px 20px 0px rgba(0, 0, 0, 0.24);
-  --shadow-3: 0px 16px 32px 0px rgba(0, 0, 0, 0.32);
+  --shadow-3: 0px 2px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.32);
 
   --shadow-color-1: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
   --shadow-color-2: 0px 10px 20px 0px rgba(0, 0, 0, 0.24);

@@ -12,11 +12,10 @@
 
 .ui.sub.header {
   text-transform: none;
-  color: var(--secondary-text);
+  color: var(--text-on-secondary);
   font-size: 13px;
   line-height: 18px;
-  font-weight: normal;
-  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .ui.header,

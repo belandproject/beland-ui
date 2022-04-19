@@ -5,7 +5,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Radio_1 = require("./Radio");
 var Row_1 = require("../Row/Row");
-react_1.storiesOf('Radio', module)
+(0, react_1.storiesOf)('Radio', module)
     .addDecorator(react_2.default)
     .add('Checked', function () { return (React.createElement(React.Fragment, null,
     React.createElement(Radio_1.Radio, { checked: true, label: "Yes" }))); })

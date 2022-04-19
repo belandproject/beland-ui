@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -61,7 +63,7 @@ var Toast = /** @class */ (function (_super) {
     };
     Toast.prototype.render = function () {
         var _a = this.props, _b = _a.type, type = _b === void 0 ? ToastType.INFO : _b, title = _a.title, body = _a.body, closable = _a.closable;
-        return (React.createElement("div", { className: "dcl toast " + type.toLowerCase() },
+        return (React.createElement("div", { className: "dcl toast ".concat(type.toLowerCase()) },
             closable ? React.createElement(Close_1.Close, { small: true, onClick: this.handleClose }) : null,
             React.createElement("div", { className: "title" }, title),
             React.createElement("div", { className: "body" }, body)));

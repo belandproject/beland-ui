@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -68,8 +70,8 @@ var Navbar = /** @class */ (function (_super) {
             return (React.createElement(React.Fragment, null,
                 middleMenu ? (React.createElement(Media_1.NotMobile, null,
                     React.createElement(Menu_1.default, { secondary: true, className: "dcl navbar-account-menu" }, middleMenu))) : null,
-                React.createElement("span", { className: "dcl account-wrapper " + (onClickAccount ? 'clickable' : ''), onClick: onClickAccount },
-                    mana != null ? (React.createElement(Bean_1.Bean, { size: "small", title: mana.toLocaleString() + " MANA" }, Math.floor(mana).toLocaleString())) : null,
+                React.createElement("span", { className: "dcl account-wrapper ".concat(onClickAccount ? 'clickable' : ''), onClick: onClickAccount },
+                    mana != null ? (React.createElement(Bean_1.Bean, { size: "small", title: "".concat(mana.toLocaleString(), " MANA") }, Math.floor(mana).toLocaleString())) : null,
                     address != null ? React.createElement(Blockie_1.Blockie, { seed: address }) : null)));
         }
         else if (isConnecting && !isSignIn) {
@@ -100,7 +102,7 @@ var Navbar = /** @class */ (function (_super) {
             classes += ' overlay';
         }
         if (className) {
-            classes += " " + className;
+            classes += " ".concat(className);
         }
         return (React.createElement("div", { className: classes, role: "navigation" },
             React.createElement(Container_1.Container, null,
@@ -113,7 +115,7 @@ var Navbar = /** @class */ (function (_super) {
                         React.createElement("div", { className: "dcl navbar-mobile-menu" },
                             React.createElement("a", { className: "dcl navbar-logo", href: "https://beland.io" },
                                 React.createElement(Logo_1.Logo, null)),
-                            React.createElement(Header_1.Header, { size: "small", className: "dcl active-page " + (this.state.toggle ? 'caret-up' : 'caret-down'), onClick: this.handleToggle }, activePage)))),
+                            React.createElement(Header_1.Header, { size: "small", className: "dcl active-page ".concat(this.state.toggle ? 'caret-up' : 'caret-down'), onClick: this.handleToggle }, activePage)))),
                 React.createElement("div", { className: "dcl navbar-account" },
                     React.createElement(Media_1.NotMobile, null,
                         React.createElement(Menu_1.default, { secondary: true, stackable: true },

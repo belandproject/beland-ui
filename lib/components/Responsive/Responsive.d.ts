@@ -45,8 +45,8 @@ export default class Responsive extends React.Component<ResponsiveProps> {
         children?: React.ReactNode;
         fireOnMount?: boolean;
         getWidth?: () => number;
-        maxWidth?: React.ReactText;
-        minWidth?: React.ReactText;
+        maxWidth?: string | number;
+        minWidth?: string | number;
         onUpdate?: (event: React.SyntheticEvent<HTMLElement, Event>, data: import("./Responsive.types").ResponsiveOnUpdateData) => void;
     };
     render(): JSX.Element;

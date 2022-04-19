@@ -111,15 +111,13 @@
 .dcl.user-menu .actions li img {
   margin-right: 12px;
   display: block;
-  -webkit-filter: var(--brightness);
-          filter: var(--brightness);
+  filter: var(--brightness);
 }
 
 .dcl.user-menu .actions .sign-out-icon {
   width: 12px;
   height: 12px;
-  -webkit-filter: var(--brightness);
-          filter: var(--brightness);
+  filter: var(--brightness);
   background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23736E7D' d='M22.5555458%2C9.8 C23.2431208%2C9.8 23.8%2C10.3568792 23.8%2C11.0444542 L23.8%2C19.7555458 C23.8%2C20.4431208 23.2431208%2C21 22.555575%2C21 L13.8444542%2C21 C13.1568792%2C21 12.6%2C20.4431208 12.6%2C19.7555458 L12.6%2C17.2666667 L13.8444542%2C17.2666667 L13.8444542%2C19.755575 L22.555575%2C19.755575 L22.555575%2C11.0444542 L13.8444542%2C11.0444542 L13.8444542%2C13.5333333 L12.6%2C13.5333333 L12.6%2C11.0444542 C12.6%2C10.3568792 13.1568792%2C9.8 13.8444542%2C9.8 L22.5555458%2C9.8 Z M17.0084542%2C17.6306667 L18.6168792%2C16.0222125 L12.6%2C16.0222125 L12.6%2C14.7777875 L18.6168792%2C14.7777875 L17.0084542%2C13.1693333 L17.8888792%2C12.2888792 L21%2C15.4 L17.8888792%2C18.5111208 L17.0084542%2C17.6306667 Z' transform='translate%28-11.9 -9.7%29'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;

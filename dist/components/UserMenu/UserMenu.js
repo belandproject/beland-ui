@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -63,11 +65,11 @@ var UserMenu = /** @class */ (function (_super) {
             React.createElement(Menu_1.default.Item, { className: isActivity ? 'activity-bell active' : 'activity-bell' }, onClickActivity ? (React.createElement(Icon_1.default, { className: hasActivity ? 'pending' : '', name: "bell", onClick: onClickActivity })) : null),
             React.createElement("div", { className: "dcl user-menu", onBlur: this.handleClose, tabIndex: 0 },
                 isSignedIn && (React.createElement(React.Fragment, null,
-                    React.createElement("span", { className: "dcl account-wrapper" }, Object.keys(manaBalances).map(function (network) { return (React.createElement(Bean_1.Bean, { key: network, network: network, size: "small", className: onClickBalance ? 'clickable' : undefined, title: manaBalances[network].toLocaleString() + " MANA", href: "https://beland.io" }, Math.floor(manaBalances[network]).toLocaleString())); })),
+                    React.createElement("span", { className: "dcl account-wrapper" }, Object.keys(manaBalances).map(function (network) { return (React.createElement(Bean_1.Bean, { key: network, network: network, size: "small", className: onClickBalance ? 'clickable' : undefined, title: "".concat(manaBalances[network].toLocaleString(), " MANA"), href: "https://beland.io" }, Math.floor(manaBalances[network]).toLocaleString())); })),
                     React.createElement("div", { className: "toggle", onClick: this.handleToggle },
                         React.createElement(AvatarFace_1.AvatarFace, { size: "medium", avatar: avatar })),
-                    React.createElement("div", { className: "menu " + (isOpen ? 'open' : '') + " " + (isClickable ? 'clickable' : '') },
-                        React.createElement("div", { className: "info " + (onClickProfile ? 'clickable' : ''), onClick: onClickProfile },
+                    React.createElement("div", { className: "menu ".concat(isOpen ? 'open' : '', " ").concat(isClickable ? 'clickable' : '') },
+                        React.createElement("div", { className: "info ".concat(onClickProfile ? 'clickable' : ''), onClick: onClickProfile },
                             React.createElement("div", { className: "image" },
                                 React.createElement(AvatarFace_1.AvatarFace, { size: "small", avatar: avatar })),
                             React.createElement("div", null,

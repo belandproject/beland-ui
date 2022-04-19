@@ -11,8 +11,7 @@
 .ui.pagination.menu .item {
   border-radius: 6px;
   font-size: 14px;
-  color: var(--text);
-  padding: 11.5px;
+  color: var(--text-on-primary);
   min-width: 32px;
   height: 32px;
 }
@@ -29,11 +28,11 @@
 
 .ui.pagination.menu .item.active {
   color: var(--text-on-primary);
-  background: var(--primary);
+  background: var(--button-primary-linear);
 }
 
 .ui.pagination.menu .item + .item {
-  margin-left: 16px;
+  margin-left: 8px;
 }
 
 .ui.pagination.menu .item:focus,

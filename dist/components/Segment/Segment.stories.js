@@ -10,7 +10,7 @@ var Button_1 = require("../Button/Button");
 var Radio_1 = require("../Radio/Radio");
 var Segment_1 = require("./Segment");
 require("./Segment.stories.css");
-react_1.storiesOf('Segment', module)
+(0, react_1.storiesOf)('Segment', module)
     .addDecorator(react_2.default)
     .add('Single segment', function () { return (React.createElement(Segment_1.Segment, { style: { width: 400 } },
     React.createElement(Header_1.Header, null, "Beland"),

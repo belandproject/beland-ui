@@ -5,31 +5,31 @@ var react_responsive_1 = require("react-responsive");
 /**
  * Media hook to determine if we're going to be rendering in a desktop environment.
  */
-var useDesktopMediaQuery = function () { return react_responsive_1.useMediaQuery({ minWidth: 992 }); };
+var useDesktopMediaQuery = function () { return (0, react_responsive_1.useMediaQuery)({ minWidth: 992 }); };
 exports.useDesktopMediaQuery = useDesktopMediaQuery;
 /**
  * Media hook to determine if we're going to be rendering in a tablet environment.
  */
 var useTabletMediaQuery = function () {
-    return react_responsive_1.useMediaQuery({ minWidth: 768, maxWidth: 991 });
+    return (0, react_responsive_1.useMediaQuery)({ minWidth: 768, maxWidth: 991 });
 };
 exports.useTabletMediaQuery = useTabletMediaQuery;
 /**
  * Media hook to determine if we're going to be rendering in a tablet or below environment.
  */
 var useTabletAndBelowMediaQuery = function () {
-    return react_responsive_1.useMediaQuery({ maxWidth: 991 });
+    return (0, react_responsive_1.useMediaQuery)({ maxWidth: 991 });
 };
 exports.useTabletAndBelowMediaQuery = useTabletAndBelowMediaQuery;
 /**
  * Media hook to determine if we're going to be rendering in a mobile environment.
  */
-var useMobileMediaQuery = function () { return react_responsive_1.useMediaQuery({ maxWidth: 767 }); };
+var useMobileMediaQuery = function () { return (0, react_responsive_1.useMediaQuery)({ maxWidth: 767 }); };
 exports.useMobileMediaQuery = useMobileMediaQuery;
 /**
  * Media hook to determine if we're going to be rendering in an environment that's not mobile.
  */
-var useNotMobileMediaQuery = function () { return react_responsive_1.useMediaQuery({ minWidth: 768 }); };
+var useNotMobileMediaQuery = function () { return (0, react_responsive_1.useMediaQuery)({ minWidth: 768 }); };
 exports.useNotMobileMediaQuery = useNotMobileMediaQuery;
 /**
  * Renders a component if the screen suits the desktop size.

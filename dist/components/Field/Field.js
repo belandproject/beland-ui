@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -60,12 +62,8 @@ var Field = /** @class */ (function (_super) {
         var _a = this.props, value = _a.value, label = _a.label, error = _a.error, message = _a.message, type = _a.type, loading = _a.loading, action = _a.action, onAction = _a.onAction, disabled = _a.disabled, rest = __rest(_a, ["value", "label", "error", "message", "type", "loading", "action", "onAction", "disabled"]);
         var isAddress = this.isAddress();
         var classes = 'dcl field';
-        var icon;
         if (error) {
             classes += ' error';
-            if (!isAddress) {
-                icon = 'warning circle';
-            }
         }
         if (isAddress) {
             classes += ' address';
@@ -77,11 +75,11 @@ var Field = /** @class */ (function (_super) {
             classes += ' has-label';
         }
         if (isAddress && action) {
-            console.warn("The address fields don't support actions, \"" + action + "\" will be ignored");
+            console.warn("The address fields don't support actions, \"".concat(action, "\" will be ignored"));
         }
         return (React.createElement("div", { className: classes },
             label ? React.createElement(Header_1.Header, { sub: true }, label) : null,
-            React.createElement(Input_1.default, __assign({ value: value, type: isAddress ? 'text' : type, icon: icon ? icon : void 0, loading: loading && !isAddress, disabled: disabled }, rest)),
+            React.createElement(Input_1.default, __assign({ value: value, type: isAddress ? 'text' : type, loading: loading && !isAddress, disabled: disabled }, rest)),
             this.hasAction() && (React.createElement("div", { className: "overlay" },
                 React.createElement(Button_1.Button, { onClick: onAction, disabled: disabled, basic: true }, action))),
             this.isAddress() && value ? React.createElement(Blockie_1.Blockie, { seed: value, scale: 4 }) : null,

@@ -5,7 +5,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Header_1 = require("../Header/Header");
 var SelectField_1 = require("./SelectField");
-react_1.storiesOf('SelectField', module)
+(0, react_1.storiesOf)('SelectField', module)
     .addDecorator(react_2.default)
     .add('Basic', function () { return (React.createElement(React.Fragment, null,
     React.createElement(SelectField_1.SelectField, { label: "Label", placeholder: "Placeholder", options: [

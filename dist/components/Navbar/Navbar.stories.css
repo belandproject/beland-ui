@@ -28,8 +28,7 @@
   height: 400px;
   margin-left: -100px;
   margin-top: 250px;
-  -webkit-filter: var(--pyramid-small-brightness);
-          filter: var(--pyramid-small-brightness);
+  filter: var(--pyramid-small-brightness);
 }
 
 .Navbar-story-container .homepage-pyramid.large {
@@ -37,8 +36,7 @@
   height: 1000px;
   margin-top: -200px;
   margin-left: 300px;
-  -webkit-filter: var(--pyramid-large-brightness);
-          filter: var(--pyramid-large-brightness);
+  filter: var(--pyramid-large-brightness);
 }
 
 .Navbar-story-container .dcl.navbar .dcl.hero {

@@ -1,8 +1,4 @@
 .dcl.footer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
   height: var(--footer-height);
   margin-top: var(--footer-margin-top);
 }
@@ -14,8 +10,25 @@
 .dcl.footer .main-footer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  height: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dcl.footer .des {    
+  margin-top: 24px;
+  max-width: 260px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.dcl.footer .links .items {
+  margin-left: 60px;
+}
+
+.dcl.footer .links .items .title {
+  color: rgba(254, 254, 254, 0.24);
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .dcl.footer .main-footer .links {
@@ -25,56 +38,31 @@
 }
 
 .dcl.footer .main-footer .links a {
-  color: var(--secondary-text);
+  color: rgba(254, 254, 254, 0.87);;
+  display: block;
   font-weight: normal;
-  margin-left: 16px;
   margin-bottom: 8px;
-}
-
-.dcl.footer .secondary-footer {
-  display: flex;
+  font-size: 13px;
 }
 
 .dcl.footer .social-links {
   margin-right: 24px;
 }
 
-.dcl.footer .social-links .social-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  color: var(--secondary-text);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: content-box;
-}
-
-.dcl.footer .social-links .social-icon:hover {
-  color: var(--primary);
-}
-
-.dcl.footer .social-links a + a {
-  margin-left: 26px;
-}
-
-.dcl.footer .social-links .social-icon.discord {
-  background-image: url('../../assets/discord.svg');
-}
-
-.dcl.footer .social-links .social-icon.reddit {
-  background-image: url('../../assets/reddit.svg');
-}
-
-.dcl.footer .social-links .social-icon.github {
-  background-image: url('../../assets/github.svg');
-}
-
-.dcl.footer .social-links .social-icon.twitter {
-  background-image: url('../../assets/twitter.svg');
+.dcl.footer .divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  margin-top: 20px;
 }
 
 .dcl.footer .copyright {
-  color: var(--secondary-text);
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 24px;
+  color: rgba(254, 254, 254, 0.52);
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1200px) {
@@ -99,18 +87,6 @@
   .dcl.footer .main-footer {
     margin-bottom: 48px;
     height: auto;
-  }
-
-  .dcl.footer .social-links {
-    margin-right: 0px;
-  }
-
-  .dcl.footer .social-links {
-    margin-bottom: 12px;
-  }
-
-  .dcl.footer .dcl.language-dropdown {
-    margin-bottom: 18px;
   }
 
   .dcl.footer .secondary-footer {

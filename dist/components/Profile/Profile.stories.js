@@ -6,7 +6,7 @@ var react_2 = require("@storybook/addon-centered/react");
 var Profile_1 = require("./Profile");
 var Bean_1 = require("../Bean/Bean");
 var avatar_1 = require("../../data/avatar");
-react_1.storiesOf('Profile', module)
+(0, react_1.storiesOf)('Profile', module)
     .addDecorator(react_2.default)
     .add('No avatar', function () { return (React.createElement(React.Fragment, null,
     React.createElement(Profile_1.Profile, { address: "0xdeadbeef" }))); })

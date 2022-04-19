@@ -5,7 +5,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Section_1 = require("./Section");
 var Header_1 = require("../Header/Header");
-react_1.storiesOf('Section', module)
+(0, react_1.storiesOf)('Section', module)
     .addDecorator(react_2.default)
     .add('Example', function () { return (React.createElement(React.Fragment, null,
     React.createElement(Section_1.Section, null,

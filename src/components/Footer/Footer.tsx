@@ -1,24 +1,17 @@
 import * as React from 'react'
 import { Container } from '../Container/Container'
 import {
-  LanguageDropdownI18N,
-  LanguageDropdownProps,
-  LanguageDropdown
+  LanguageDropdownProps
 } from '../LanguageDropdown/LanguageDropdown'
 import { Locale } from '../Language/Language'
 import './Footer.css'
+import { Logo } from '../Logo/Logo'
 
-export type LinksI18N = {
-  home: React.ReactNode
-  privacy: React.ReactNode
-  terms: React.ReactNode
-  content: React.ReactNode
-  ethics: React.ReactNode
-}
 
 export type FooterI18N = {
-  dropdown: LanguageDropdownI18N
-  links: LinksI18N
+  title: any;
+  links: any;
+  content: any;
 }
 
 export type FooterProps = {
@@ -33,26 +26,62 @@ export type FooterProps = {
 export class Footer extends React.PureComponent<FooterProps> {
   static defaultProps: Partial<FooterProps> = {
     i18n: {
-      dropdown: {
-        en: 'English',
-        es: 'Spanish',
-        fr: 'French',
-        ja: 'Japanese',
-        zh: 'Chinese',
-        ko: 'Korean'
+      content: {
+        description: 'Beland is a legal entity representing an association of people, whether natural legal.',
+        copyright: '©Copyright 2022. Beland. All Rights Reserved'
+      },
+      title: {
+        about: 'About',
+        developers: 'Developers',
+        media: 'Media'
       },
       links: {
-        home: 'Home',
-        privacy: 'Privacy Policy',
-        terms: 'Terms of Use',
-        content: 'Content Policy',
-        ethics: 'Code of Ethics'
+        home: {
+          text: 'Home',
+          link: 'https://beland.io'
+        },
+        market: {
+          text: 'Market',
+          link: 'https://beland.io'
+        },
+        builder: {
+          text: 'Builder',
+          link: 'https://beland.io'
+        },
+        roadmap: {
+          text: 'Roadmap',
+          link: 'https://beland.io'
+        },
+        testnet: {
+          text: 'Testnet',
+          link: 'https://beland.io'
+        },
+        github: {
+          text: 'Github',
+          link: 'https://beland.io'
+        },
+        docs: {
+          text: 'Documentation',
+          link: 'https://beland.io'
+        },
+        dao: {
+          text: 'Dao',
+          link: 'https://beland.io'
+        },
+        blog: {
+          text: 'Blog',
+          link: 'https://beland.io'
+        },
+        event: {
+          text: 'Event',
+          link: 'https://beland.io'
+        }
       }
     }
   }
 
   render(): JSX.Element {
-    const { locale, locales, onChange, i18n, isFullscreen, className } =
+    const { i18n, isFullscreen, className } =
       this.props
 
     let classes = 'dcl footer'
@@ -66,41 +95,36 @@ export class Footer extends React.PureComponent<FooterProps> {
     return (
       <Container className={classes}>
         <div className="main-footer">
-          <LanguageDropdown
-            locale={locale}
-            locales={locales}
-            onChange={onChange}
-            upward
-            direction="right"
-            i18n={i18n.dropdown}
-          />
+            <div>
+              <a className="dcl navbar-logo" href="https://beland.io">
+                <Logo />
+              </a>
+              <div className='des'>{i18n.content.description}</div>
+            </div>
           <div className="links">
-            <a href="https://beland.io">{i18n.links.home}</a>
-            <a href="https://beland.io/privacy">{i18n.links.privacy}</a>
-            <a href="https://beland.io/terms">{i18n.links.terms}</a>
-            <a href="https://beland.io/content">{i18n.links.content}</a>
-            <a href="https://beland.io/ethics">{i18n.links.ethics}</a>
+            <div className='items'>
+              <div className='title'>{i18n.title.about}</div>
+              <a href={i18n.links.home.link}>{i18n.links.home.text}</a>
+              <a href={i18n.links.market.link}>{i18n.links.market.text}</a>
+              <a href={i18n.links.builder.link}>{i18n.links.builder.text}</a>
+              <a href={i18n.links.roadmap.link}>{i18n.links.roadmap.text}</a>
+            </div>
+            <div className='items'>
+              <div className='title'>{i18n.title.developers}</div>
+              <a href={i18n.links.testnet.link}>{i18n.links.testnet.text}</a>
+              <a href={i18n.links.github.link}>{i18n.links.github.text}</a>
+              <a href={i18n.links.docs.link}>{i18n.links.docs.text}</a>
+              <a href={i18n.links.dao.link}>{i18n.links.dao.text}</a>
+            </div>
+            <div className='items'>
+              <div className='title'>{i18n.title.media}</div>
+              <a href={i18n.links.blog.link}>{i18n.links.blog.text}</a>
+              <a href={i18n.links.event.link}>{i18n.links.event.text}</a>
+            </div>
           </div>
         </div>
-        <div className="secondary-footer">
-          <div className="social-links">
-            <a href="https://dcl.gg/discord">
-              <i className="social-icon discord" />
-            </a>
-            <a href="https://reddit.com/r/beland">
-              <i className="social-icon reddit" />
-            </a>
-            <a href="https://github.com/beland">
-              <i className="social-icon github" />
-            </a>
-            <a href="https://twitter.com/beland">
-              <i className="social-icon twitter" />
-            </a>
-          </div>
-          <div className="copyright">
-            © {new Date().getFullYear()} Beland
-          </div>
-        </div>
+        <div className='divider'></div>
+        <div className='copyright'>{i18n.content.copyright}</div>
       </Container>
     )
   }

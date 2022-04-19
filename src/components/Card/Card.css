@@ -12,8 +12,7 @@
 .ui.cards > .ui.card,
 .ui.card {
   box-shadow: var(--shadow-1);
-  border: var(--outline);
-  border-radius: 8px;
+  border-radius: 12px;
   background-color: var(--card);
 }
 
@@ -32,7 +31,6 @@ a.ui.card:hover,
   box-shadow: var(--shadow-2);
   transform: translateY(-4px);
   cursor: pointer;
-  border: var(--outline) !important;
 }
 
 .ui.card > .content,

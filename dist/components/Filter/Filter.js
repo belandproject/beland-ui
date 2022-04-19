@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -23,7 +25,7 @@ var Filter = /** @class */ (function (_super) {
     }
     Filter.prototype.render = function () {
         var _a = this.props, active = _a.active, children = _a.children;
-        return (React.createElement("div", { className: "dcl filter " + (active ? 'active' : '') },
+        return (React.createElement("div", { className: "dcl filter ".concat(active ? 'active' : '') },
             React.createElement("div", { className: "filter-background" }),
             React.createElement("span", null, children)));
     };

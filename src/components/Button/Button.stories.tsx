@@ -19,7 +19,7 @@ storiesOf('Button', module)
   ))
   .add('Secondary', () => (
     <Row>
-      <Button>Cancel</Button>
+      <Button secondary>Cancel</Button>
       <Button disabled>Cancel</Button>
     </Row>
   ))

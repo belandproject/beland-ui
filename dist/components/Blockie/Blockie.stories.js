@@ -7,7 +7,7 @@ var Address_1 = require("../Address/Address");
 var Bean_1 = require("../Bean/Bean");
 var Blockie_1 = require("./Blockie");
 var address = '0x0F5D2fB29fb7d3CFeE444a200298f468908cC942';
-react_1.storiesOf('Blockie', module)
+(0, react_1.storiesOf)('Blockie', module)
     .addDecorator(react_2.default)
     .add('Single', function () { return React.createElement(Blockie_1.Blockie, { seed: address }); })
     .add('Scales', function () { return (React.createElement(React.Fragment, null,

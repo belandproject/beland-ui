@@ -6,7 +6,7 @@ var react_2 = require("@storybook/addon-centered/react");
 var Form_1 = require("semantic-ui-react/dist/commonjs/collections/Form");
 var Field_1 = require("./Field");
 var address = '0x68FFc53C43C65C8Dd778969320e21B85b10363cE';
-react_1.storiesOf('Field', module)
+(0, react_1.storiesOf)('Field', module)
     .addDecorator(react_2.default)
     .add('Placeholder', function () { return React.createElement(Field_1.Field, { label: "Label", placeholder: "Placeholder" }); })
     .add('Value', function () { return React.createElement(Field_1.Field, { label: "Label", value: "Input Value" }); })

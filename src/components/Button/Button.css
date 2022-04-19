@@ -2,12 +2,12 @@
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
-  text-transform: uppercase;
   font-family: var(--font-family);
   text-align: center;
-  font-weight: 600;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
   margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* hover */
@@ -45,8 +45,8 @@
 .ui.button.medium,
 .ui.button {
   padding: 13px 32px;
-  border-radius: 6px;
-  font-size: 13px;
+  border-radius: 8px;
+  font-size: 16px;
   line-height: 18px;
   min-width: 128px;
 }
@@ -54,9 +54,9 @@
 .ui.button.large,
 .ui.button.huge,
 .ui.button.massive {
-  padding: 14px 40px;
+  padding: 12px 40px;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   min-width: 160px;
 }
@@ -71,13 +71,17 @@
 
 .ui.button,
 .ui.button.secondary {
-  background-color: var(--secondary);
+  background-color: transparent;
   color: var(--text-on-secondary);
 }
 
+.ui.button.secondary {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
 .ui.button.primary {
-  background-color: var(--primary);
-  color: var(--text-on-primary);
+  background: var(--button-primary-linear);
+  color: var(--button-text-on-primary);
 }
 
 .ui.button:hover,
@@ -86,15 +90,15 @@
 .ui.button.secondary:active,
 .ui.button:focus,
 .ui.button.secondary:focus {
-  background-color: var(--secondary-hover);
+  background-color: transparent;
   color: var(--text-on-secondary);
 }
 
 .ui.button.primary:hover,
 .ui.button.primary:active,
 .ui.button.primary:focus {
-  background-color: var(--primary-hover);
-  color: var(--text-on-primary);
+  background: var(--button-primary-linear);
+  color: var(--text-on-secondary);
 }
 
 /* links */
@@ -117,7 +121,6 @@
 /* basic */
 
 .ui.button.basic {
-  text-transform: uppercase;
   color: var(
     --primary
   ) !important; /* this !important is due to an important in semantic-ui-css */
@@ -125,6 +128,7 @@
   box-shadow: none;
   padding: 8px;
   min-width: auto;
+  font-size: 16px;
 }
 
 .ui.button.basic a {

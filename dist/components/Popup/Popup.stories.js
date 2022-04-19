@@ -7,7 +7,7 @@ var Close_1 = require("../Close/Close");
 var Row_1 = require("../Row/Row");
 var Popup_1 = require("./Popup");
 require("./Popup.stories.css");
-react_1.storiesOf('Popup', module)
+(0, react_1.storiesOf)('Popup', module)
     .addDecorator(react_2.default)
     .add('On hover', function () { return (React.createElement("span", null,
     "If you want to see it\u00A0",

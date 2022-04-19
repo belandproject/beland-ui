@@ -1,17 +1,11 @@
 import * as React from 'react';
-import { LanguageDropdownI18N, LanguageDropdownProps } from '../LanguageDropdown/LanguageDropdown';
+import { LanguageDropdownProps } from '../LanguageDropdown/LanguageDropdown';
 import { Locale } from '../Language/Language';
 import './Footer.css';
-export declare type LinksI18N = {
-    home: React.ReactNode;
-    privacy: React.ReactNode;
-    terms: React.ReactNode;
-    content: React.ReactNode;
-    ethics: React.ReactNode;
-};
 export declare type FooterI18N = {
-    dropdown: LanguageDropdownI18N;
-    links: LinksI18N;
+    title: any;
+    links: any;
+    content: any;
 };
 export declare type FooterProps = {
     locale?: Locale;
