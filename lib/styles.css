@@ -715,16 +715,16 @@ a:hover {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* .ui.container {
+  .ui.container {
     width: 1064px;
-  } */
+  }
 }
 
 @media (max-width: 768px) {
-  /* .ui.container {
+  .ui.container {
     margin-left: 16px !important;
     margin-right: 16px !important;
-  } */
+  }
 }
 
 .ui.cards > .ui.card {
@@ -1829,11 +1829,6 @@ a.ui.card:hover,
   color: var(--primary);
 }
 
-.dcl.footer {
-  height: var(--footer-height);
-  margin-top: var(--footer-margin-top);
-}
-
 .dcl.footer.fullscreen {
   margin-top: 0px;
 }
@@ -1929,17 +1924,6 @@ a.ui.card:hover,
     padding: 20px 0px;
   }
 }
-
-@media (max-width: 768px) {
-  .dcl.footer {
-    margin-top: var(--footer-margin-top);
-    padding-bottom: 80px;
-  }
-  .dcl.footer.fullscreen {
-    padding: var(--footer-margin-top) 0px;
-  }
-}
-
 .dcl.logo {
   display: inline-block;
   width: 126px;
