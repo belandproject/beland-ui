@@ -7,8 +7,6 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -26,18 +24,18 @@ var WearablePreview = /** @class */ (function (_super) {
         _this.iframe = null;
         _this.getUrl = function () {
             var _a = _this.props, contractAddress = _a.contractAddress, tokenId = _a.tokenId, itemId = _a.itemId, profile = _a.profile, urns = _a.urns, skin = _a.skin, hair = _a.hair, eyes = _a.eyes, bodyShape = _a.bodyShape, emote = _a.emote, zoom = _a.zoom, camera = _a.camera, dev = _a.dev, baseUrl = _a.baseUrl;
-            var contractParam = contractAddress ? "contract=".concat(contractAddress) : '';
-            var tokenParam = tokenId ? "token=".concat(tokenId) : '';
-            var itemParam = itemId ? "item=".concat(itemId) : '';
-            var profileParam = profile ? "profile=".concat(profile) : '';
-            var urnParams = urns && urns.length > 0 ? urns.map(function (urn) { return "urn=".concat(urn); }).join('&') : '';
-            var skinParam = skin ? "skin=".concat(skin) : '';
-            var hairParam = hair ? "hair=".concat(hair) : '';
-            var eyesParam = eyes ? "eyes=".concat(eyes) : '';
-            var bodyShapeParam = bodyShape ? "bodyShape=".concat(bodyShape) : '';
-            var emoteParam = emote ? "emote=".concat(emote) : '';
-            var zoomParam = zoom ? "zoom=".concat(zoom) : '';
-            var cameraParam = camera ? "camera=".concat(camera) : '';
+            var contractParam = contractAddress ? "contract=" + contractAddress : '';
+            var tokenParam = tokenId ? "token=" + tokenId : '';
+            var itemParam = itemId ? "item=" + itemId : '';
+            var profileParam = profile ? "profile=" + profile : '';
+            var urnParams = urns && urns.length > 0 ? urns.map(function (urn) { return "urn=" + urn; }).join('&') : '';
+            var skinParam = skin ? "skin=" + skin : '';
+            var hairParam = hair ? "hair=" + hair : '';
+            var eyesParam = eyes ? "eyes=" + eyes : '';
+            var bodyShapeParam = bodyShape ? "bodyShape=" + bodyShape : '';
+            var emoteParam = emote ? "emote=" + emote : '';
+            var zoomParam = zoom ? "zoom=" + zoom : '';
+            var cameraParam = camera ? "camera=" + camera : '';
             var envParam = dev ? "env=dev" : '';
             var url = baseUrl +
                 '?' +

@@ -35,7 +35,7 @@ const COLOR_BY_TYPE = Object.freeze({
   5: '#5054D4', // districts
   6: '#563db8', // contributions
   7: '#716C7A', // roads
-  8: '#70AC76', // plazas
+  8: '#3643FC', // plazas
   9: '#3D3A46', // owned parcel/estate
   10: '#3D3A46', // parcels on sale (we show them as owned parcels)
   11: '#09080A', // unowned pacel/estate

@@ -5,7 +5,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var LanguageIcon_1 = require("./LanguageIcon");
 require("./LanguageIcon.stories.css");
-(0, react_1.storiesOf)('LanguageIcon', module)
+react_1.storiesOf('LanguageIcon', module)
     .addDecorator(react_2.default)
     .add('Single', function () { return React.createElement(LanguageIcon_1.LanguageIcon, { locale: "en" }); })
     .add('Options', function () { return (React.createElement("div", { className: "LanguageIcon-story" },

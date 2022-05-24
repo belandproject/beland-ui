@@ -265,7 +265,7 @@
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
- */.dimmable:not(body){position:relative}.ui.dimmer{display:none;position:absolute;top:0!important;left:0!important;width:100%;height:100%;text-align:center;vertical-align:middle;padding:1em;background-color:rgba(0,0,0,.85);opacity:0;line-height:1;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:.5s;animation-duration:.5s;transition:background-color .5s linear;flex-direction:column;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;will-change:opacity;z-index:1000}.ui.dimmer>.content{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;color:#fff}.ui.segment>.ui.dimmer{border-radius:inherit!important}.ui.dimmer:not(.inverted)::-webkit-scrollbar-track{background:rgba(255,255,255,.1)}.ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb{background:rgba(255,255,255,.25)}.ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb:window-inactive{background:rgba(255,255,255,.15)}.ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.35)}.animating.dimmable:not(body),.dimmed.dimmable:not(body){overflow:hidden}.dimmed.dimmable>.ui.animating.dimmer,.dimmed.dimmable>.ui.visible.dimmer,.ui.active.dimmer{display:flex;opacity:1}.ui.disabled.dimmer{width:0!important;height:0!important}.dimmed.dimmable>.ui.animating.legacy.dimmer,.dimmed.dimmable>.ui.visible.legacy.dimmer,.ui.active.legacy.dimmer{display:block}.ui[class*="top aligned"].dimmer{justify-content:flex-start}.ui[class*="bottom aligned"].dimmer{justify-content:flex-end}.ui.page.dimmer{position:fixed;transform-style:'';perspective:2000px;transform-origin:center center}body.animating.in.dimmable,body.dimmed.dimmable{overflow:hidden}body.dimmable>.dimmer{position:fixed}.blurring.dimmable>:not(.dimmer){filter:blur(0) grayscale(0);transition:.8s -webkit-filter ease;transition:.8s filter ease;transition:.8s filter ease,.8s -webkit-filter ease}.blurring.dimmed.dimmable>:not(.dimmer){filter:blur(5px) grayscale(.7)}.blurring.dimmable>.dimmer{background-color:rgba(0,0,0,.6)}.blurring.dimmable>.inverted.dimmer{background-color:rgba(255,255,255,.6)}.ui.dimmer>.top.aligned.content>*{vertical-align:top}.ui.dimmer>.bottom.aligned.content>*{vertical-align:bottom}.ui.inverted.dimmer{background-color:rgba(255,255,255,.85)}.ui.inverted.dimmer>.content>*{color:#fff}.ui.simple.dimmer{display:block;overflow:hidden;opacity:1;width:0%;height:0%;z-index:-100;background-color:rgba(0,0,0,0)}.dimmed.dimmable>.ui.simple.dimmer{overflow:visible;opacity:1;width:100%;height:100%;background-color:rgba(0,0,0,.85);z-index:1}.ui.simple.inverted.dimmer{background-color:rgba(255,255,255,0)}.dimmed.dimmable>.ui.simple.inverted.dimmer{background-color:rgba(255,255,255,.85)}/*!
+ */.dimmable:not(body){position:relative}.ui.dimmer{display:none;position:absolute;top:0!important;left:0!important;width:100%;height:100%;text-align:center;vertical-align:middle;padding:1em;background-color:rgba(0,0,0,.85);opacity:0;line-height:1;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:.5s;animation-duration:.5s;transition:background-color .5s linear;flex-direction:column;align-items:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;will-change:opacity;z-index:1000}.ui.dimmer>.content{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;color:#fff}.ui.segment>.ui.dimmer{border-radius:inherit!important}.ui.dimmer:not(.inverted)::-webkit-scrollbar-track{background:rgba(255,255,255,.1)}.ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb{background:rgba(255,255,255,.25)}.ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb:window-inactive{background:rgba(255,255,255,.15)}.ui.dimmer:not(.inverted)::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.35)}.animating.dimmable:not(body),.dimmed.dimmable:not(body){overflow:hidden}.dimmed.dimmable>.ui.animating.dimmer,.dimmed.dimmable>.ui.visible.dimmer,.ui.active.dimmer{display:flex;opacity:1}.ui.disabled.dimmer{width:0!important;height:0!important}.dimmed.dimmable>.ui.animating.legacy.dimmer,.dimmed.dimmable>.ui.visible.legacy.dimmer,.ui.active.legacy.dimmer{display:block}.ui[class*="top aligned"].dimmer{justify-content:flex-start}.ui[class*="bottom aligned"].dimmer{justify-content:flex-end}.ui.page.dimmer{position:fixed;transform-style:'';perspective:2000px;transform-origin:center center}body.animating.in.dimmable,body.dimmed.dimmable{overflow:hidden}body.dimmable>.dimmer{position:fixed}.blurring.dimmable>:not(.dimmer){-webkit-filter:blur(0) grayscale(0);filter:blur(0) grayscale(0);transition:.8s -webkit-filter ease;transition:.8s filter ease;transition:.8s filter ease,.8s -webkit-filter ease}.blurring.dimmed.dimmable>:not(.dimmer){-webkit-filter:blur(5px) grayscale(.7);filter:blur(5px) grayscale(.7)}.blurring.dimmable>.dimmer{background-color:rgba(0,0,0,.6)}.blurring.dimmable>.inverted.dimmer{background-color:rgba(255,255,255,.6)}.ui.dimmer>.top.aligned.content>*{vertical-align:top}.ui.dimmer>.bottom.aligned.content>*{vertical-align:bottom}.ui.inverted.dimmer{background-color:rgba(255,255,255,.85)}.ui.inverted.dimmer>.content>*{color:#fff}.ui.simple.dimmer{display:block;overflow:hidden;opacity:1;width:0%;height:0%;z-index:-100;background-color:rgba(0,0,0,0)}.dimmed.dimmable>.ui.simple.dimmer{overflow:visible;opacity:1;width:100%;height:100%;background-color:rgba(0,0,0,.85);z-index:1}.ui.simple.inverted.dimmer{background-color:rgba(255,255,255,0)}.dimmed.dimmable>.ui.simple.inverted.dimmer{background-color:rgba(255,255,255,.85)}/*!
  * # Semantic UI 2.4.0 - Dropdown
  * http://github.com/semantic-org/semantic-ui/
  *
@@ -1567,7 +1567,8 @@ a.ui.card:hover,
   background-size: 24px;
   cursor: pointer;
   margin: 0px 2px;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
   padding: 8px;
 }
 
@@ -1707,7 +1708,8 @@ a.ui.card:hover,
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDE0IDE0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS01LTVoMjR2MjRILTV6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTEzLjcwNi4zNjNsLS4wNjktLjA2OWExIDEgMCAwIDAtMS40MTQgMEw3IDUuNTE3IDEuNzc3LjI5NGExIDEgMCAwIDAtMS40MTQgMEwuMjk0LjM2M2ExIDEgMCAwIDAgMCAxLjQxNEw1LjUxNyA3IC4yOTQgMTIuMjIzYTEgMSAwIDAgMCAwIDEuNDE0bC4wNjkuMDY5YTEgMSAwIDAgMCAxLjQxNCAwTDcgOC40ODNsNS4yMjMgNS4yMjNhMSAxIDAgMCAwIDEuNDE0IDBsLjA2OS0uMDY5YTEgMSAwIDAgMCAwLTEuNDE0TDguNDgzIDdsNS4yMjMtNS4yMjNhMSAxIDAgMCAwIDAtMS40MTR6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=);
   background-repeat: no-repeat;
   background-position: center;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
 }
 
 .dcl.close.small {
@@ -1722,7 +1724,8 @@ a.ui.card:hover,
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJtYXRyaXgoMCAxIDEgMCAtNCAtNCkiPgogICAgICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI4IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iIG9wYWNpdHk9Ii4xMiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE1LjE4NyA4Ljg1M2wtLjAzOS0uMDRhLjU3MS41NzEgMCAwIDAtLjgwOCAwbC0yLjMzOSAyLjM0TDkuNjYgOC44MWEuNTcxLjU3MSAwIDAgMC0uODA4IDBsLS4wNC4wNGEuNTcxLjU3MSAwIDAgMCAwIC44MDhMMTEuMTU1IDEybC0yLjM0MSAyLjM0MWEuNTcxLjU3MSAwIDAgMCAwIC44MDhsLjAzOS4wNGEuNTcxLjU3MSAwIDAgMCAuODA4IDBMMTIgMTIuODQ3bDIuMzQgMi4zNGEuNTcxLjU3MSAwIDAgMCAuODA3IDBsLjA0LS4wNGEuNTcxLjU3MSAwIDAgMCAwLS44MDhMMTIuODQ3IDEybDIuMzQtMi4zMzlhLjU3MS41NzEgMCAwIDAgMC0uODA4eiIvPgogICAgPC9nPgo8L3N2Zz4K);
   background-repeat: no-repeat;
   background-position: center;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
 }
 
 .ui.modal .dcl.close {
@@ -2089,7 +2092,8 @@ a.ui.card:hover,
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
 }
 
 .dcl.modal-navigation-button.modal-navigation-close {
@@ -2376,7 +2380,8 @@ a.ui.card:hover,
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiAwTDI0IDEyTDEyIDI0TDAgMTJMMTIgMFpNMTIuMDAwMiAzLjM2MDAxTDIwLjY0MDIgMTJMMTIuMDAwMiAyMC42NEwzLjM2MDIzIDEyTDEyLjAwMDIgMy4zNjAwMVpNMTIuMDAwOSAxNi4zMkMxNC4zODY4IDE2LjMyIDE2LjMyMDkgMTQuMzg1OSAxNi4zMjA5IDEyQzE2LjMyMDkgOS42MTQxNSAxNC4zODY4IDcuNjgwMDIgMTIuMDAwOSA3LjY4MDAyQzkuNjE1MDcgNy42ODAwMiA3LjY4MDk0IDkuNjE0MTUgNy42ODA5NCAxMkM3LjY4MDk0IDE0LjM4NTkgOS42MTUwNyAxNi4zMiAxMi4wMDA5IDE2LjMyWiIgZmlsbD0iIzE2MTQxQSIvPgo8L3N2Zz4K);
   display: inline-block;
   background-size: contain;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
   transform: translateY(0.2em);
 }
 
@@ -2578,7 +2583,8 @@ a.ui.card:hover,
   background-repeat: no-repeat;
   display: inline-block;
   margin-left: 8px;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgMTAgNiI+CiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGQ9Ik0tNy05aDI0djI0SC03eiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiMwRDBEMTciIGQ9Ik01IDZsNC43NTYtNC42QS44MDYuODA2IDAgMCAwIDkuNzU4LjI0NC44NTYuODU2IDAgMCAwIDguNTY2LjI0TDUgMy42ODMgMS40MzQuMjQxQS44NTYuODU2IDAgMCAwIC4yNDIuMjQ0LjgwNi44MDYgMCAwIDAgLjI0NCAxLjRMNSA2eiIvPgogICAgPC9nPgo8L3N2Zz4K);
   transition: transform 0.25s ease;
 }
@@ -2951,7 +2957,8 @@ a.ui.card:hover,
   background-size: contain;
   width: 16px;
   height: 16px;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
 }
 
 .dcl.stats {
@@ -3346,13 +3353,15 @@ a.ui.card:hover,
 .dcl.user-menu .actions li img {
   margin-right: 12px;
   display: block;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
 }
 
 .dcl.user-menu .actions .sign-out-icon {
   width: 12px;
   height: 12px;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICA8cGF0aCBmaWxsPSIjNzM2RTdEIiBkPSJNMjIuNTU1NTQ1OCw5LjggQzIzLjI0MzEyMDgsOS44IDIzLjgsMTAuMzU2ODc5MiAyMy44LDExLjA0NDQ1NDIgTDIzLjgsMTkuNzU1NTQ1OCBDMjMuOCwyMC40NDMxMjA4IDIzLjI0MzEyMDgsMjEgMjIuNTU1NTc1LDIxIEwxMy44NDQ0NTQyLDIxIEMxMy4xNTY4NzkyLDIxIDEyLjYsMjAuNDQzMTIwOCAxMi42LDE5Ljc1NTU0NTggTDEyLjYsMTcuMjY2NjY2NyBMMTMuODQ0NDU0MiwxNy4yNjY2NjY3IEwxMy44NDQ0NTQyLDE5Ljc1NTU3NSBMMjIuNTU1NTc1LDE5Ljc1NTU3NSBMMjIuNTU1NTc1LDExLjA0NDQ1NDIgTDEzLjg0NDQ1NDIsMTEuMDQ0NDU0MiBMMTMuODQ0NDU0MiwxMy41MzMzMzMzIEwxMi42LDEzLjUzMzMzMzMgTDEyLjYsMTEuMDQ0NDU0MiBDMTIuNiwxMC4zNTY4NzkyIDEzLjE1Njg3OTIsOS44IDEzLjg0NDQ1NDIsOS44IEwyMi41NTU1NDU4LDkuOCBaIE0xNy4wMDg0NTQyLDE3LjYzMDY2NjcgTDE4LjYxNjg3OTIsMTYuMDIyMjEyNSBMMTIuNiwxNi4wMjIyMTI1IEwxMi42LDE0Ljc3Nzc4NzUgTDE4LjYxNjg3OTIsMTQuNzc3Nzg3NSBMMTcuMDA4NDU0MiwxMy4xNjkzMzMzIEwxNy44ODg4NzkyLDEyLjI4ODg3OTIgTDIxLDE1LjQgTDE3Ljg4ODg3OTIsMTguNTExMTIwOCBMMTcuMDA4NDU0MiwxNy42MzA2NjY3IFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMS45IC05LjcpIi8+Cjwvc3ZnPgo=);
   background-position: center;
   background-repeat: no-repeat;
@@ -3576,12 +3585,22 @@ a.ui.card:hover,
   background-position-x: 8px;
 }
 
+.dcl.text-filter .text-input input::-webkit-input-placeholder {
+  color: var(--secondary-text);
+  font-weight: 400;
+}
+
 .dcl.text-filter .text-input input::-moz-placeholder {
   color: var(--secondary-text);
   font-weight: 400;
 }
 
 .dcl.text-filter .text-input input:-ms-input-placeholder {
+  color: var(--secondary-text);
+  font-weight: 400;
+}
+
+.dcl.text-filter .text-input input::-ms-input-placeholder {
   color: var(--secondary-text);
   font-weight: 400;
 }

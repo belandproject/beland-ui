@@ -7,8 +7,6 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -54,7 +52,7 @@ var Blockie = /** @class */ (function (_super) {
     };
     Blockie.prototype.render = function () {
         var _a = this.props, size = _a.size, scale = _a.scale, children = _a.children, className = _a.className;
-        var classes = "dcl blockie ".concat(className).trim();
+        var classes = ("dcl blockie " + className).trim();
         if (scale * size <= 16) {
             classes += ' mini';
         }

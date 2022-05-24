@@ -7,7 +7,7 @@ var Button_1 = require("../Button/Button");
 var Parallax_1 = require("../Parallax/Parallax");
 var Hero_1 = require("./Hero");
 require("./Hero.stories.css");
-(0, react_1.storiesOf)('Hero', module)
+react_1.storiesOf('Hero', module)
     .addDecorator(react_2.default)
     .add('Text only', function () { return (React.createElement("div", { className: "story" },
     React.createElement(Hero_1.Hero, { centered: true },

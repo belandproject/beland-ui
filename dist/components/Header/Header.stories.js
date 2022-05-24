@@ -4,7 +4,7 @@ var React = require("react");
 var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Header_1 = require("./Header");
-(0, react_1.storiesOf)('Header', module)
+react_1.storiesOf('Header', module)
     .addDecorator(react_2.default)
     .add('Subheader + Header', function () { return (React.createElement(React.Fragment, null,
     React.createElement(Header_1.Header, { sub: true }, "Votes"),

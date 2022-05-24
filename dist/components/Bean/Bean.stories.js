@@ -6,7 +6,7 @@ var react_2 = require("@storybook/addon-centered/react");
 var schemas_1 = require("@beland/schemas");
 var Header_1 = require("../Header/Header");
 var Bean_1 = require("./Bean");
-(0, react_1.storiesOf)('Mana', module)
+react_1.storiesOf('Mana', module)
     .addDecorator(react_2.default)
     .add('Symbol', function () { return React.createElement(Bean_1.Bean, null); })
     .add('Symbol + MANA', function () { return React.createElement(Bean_1.Bean, null, "Bean"); })

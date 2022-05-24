@@ -9,7 +9,7 @@ var Container_1 = require("../Container/Container");
 var Dropdown_1 = require("../Dropdown/Dropdown");
 var Header_1 = require("../Header/Header");
 var HeaderMenu_1 = require("./HeaderMenu");
-(0, react_1.storiesOf)('HeaderMenu', module)
+react_1.storiesOf('HeaderMenu', module)
     .addDecorator(react_2.default)
     .add('With Button', function () { return (React.createElement(Container_1.Container, null,
     React.createElement(HeaderMenu_1.HeaderMenu, null,

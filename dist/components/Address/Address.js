@@ -7,8 +7,6 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -36,7 +34,7 @@ var Address = /** @class */ (function (_super) {
     }
     Address.prototype.render = function () {
         var _a = this.props, className = _a.className, strong = _a.strong, shorten = _a.shorten, tooltip = _a.tooltip, value = _a.value;
-        var classes = "dcl address ".concat(className).trim();
+        var classes = ("dcl address " + className).trim();
         var address = shorten
             ? value.slice(0, 6) + '\u2026' + value.slice(-4)
             : value;

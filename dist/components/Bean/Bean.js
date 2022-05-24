@@ -7,8 +7,6 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -49,7 +47,7 @@ var Bean = /** @class */ (function (_super) {
     }
     Bean.prototype.render = function () {
         var _a = this.props, size = _a.size, className = _a.className, inline = _a.inline, children = _a.children, network = _a.network, rest = __rest(_a, ["size", "className", "inline", "children", "network"]);
-        var classes = "beland bean ".concat(inline ? 'inline ' : '').concat(className).trim();
+        var classes = ("beland bean " + (inline ? 'inline ' : '') + className).trim();
         return (React.createElement(Header_1.Header, __assign({ size: size, className: classes }, rest),
             React.createElement("i", { className: "symbol" },
                 React.createElement("i", { className: network.toLowerCase() })),

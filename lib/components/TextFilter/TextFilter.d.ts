@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import './TextFilter.css';
 export declare type TextFilterProps = {
     label?: string;

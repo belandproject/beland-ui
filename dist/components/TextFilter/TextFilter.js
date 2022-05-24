@@ -7,7 +7,7 @@ var input_1 = require("../../hooks/input");
 require("./TextFilter.css");
 var TextFilter = function (props) {
     var label = props.label, value = props.value, placeholder = props.placeholder, onChange = props.onChange;
-    var _a = (0, input_1.useInput)(value, onChange), text = _a[0], setText = _a[1];
+    var _a = input_1.useInput(value, onChange), text = _a[0], setText = _a[1];
     var inputRef = React.useRef(null);
     React.useEffect(function () {
         if (inputRef.current) {

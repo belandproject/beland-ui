@@ -4,7 +4,7 @@ var React = require("react");
 var react_1 = require("@storybook/react");
 var __1 = require("../..");
 require("./WearablePreview.stories.css");
-(0, react_1.storiesOf)('WearablePreview', module)
+react_1.storiesOf('WearablePreview', module)
     .add('Preview an item', function () { return (React.createElement("div", { className: "WearablePreview-story-container" },
     React.createElement(__1.WearablePreview, { contractAddress: "0xee8ae4c668edd43b34b98934d6d2ff82e41e6488", itemId: "5" }))); })
     .add('Preview a token', function () { return (React.createElement("div", { className: "WearablePreview-story-container" },

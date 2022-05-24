@@ -9,7 +9,8 @@
   background-size: 24px;
   cursor: pointer;
   margin: 0px 2px;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
   padding: 8px;
 }
 

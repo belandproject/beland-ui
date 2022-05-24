@@ -7,8 +7,6 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -25,7 +23,7 @@ var Close = /** @class */ (function (_super) {
     }
     Close.prototype.render = function () {
         var _a = this.props, small = _a.small, onClick = _a.onClick;
-        return (React.createElement("div", { className: "dcl close ".concat(small ? 'small' : ''), onClick: onClick },
+        return (React.createElement("div", { className: "dcl close " + (small ? 'small' : ''), onClick: onClick },
             React.createElement("div", { className: "close-icon" })));
     };
     Close.defaultProps = {

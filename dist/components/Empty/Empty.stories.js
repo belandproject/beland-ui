@@ -5,7 +5,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Empty_1 = require("./Empty");
 var Page_1 = require("../Page/Page");
-(0, react_1.storiesOf)('Empty', module)
+react_1.storiesOf('Empty', module)
     .addDecorator(react_2.default)
     .add('Example', function () { return (React.createElement(Page_1.Page, null,
     React.createElement(Empty_1.Empty, null, "No results..."))); })

@@ -12,7 +12,7 @@ var UserMenu_1 = require("../UserMenu/UserMenu");
 var avatar_1 = require("../../data/avatar");
 var Navbar_1 = require("./Navbar");
 require("./Navbar.stories.css");
-(0, react_1.storiesOf)('Navbar', module)
+react_1.storiesOf('Navbar', module)
     .addDecorator(react_2.default)
     .add('DAO', function () {
     return (React.createElement("div", { className: "Navbar-story-container" },

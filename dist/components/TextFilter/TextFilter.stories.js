@@ -15,7 +15,7 @@ function generateValueAndChangeFunction() {
     return result;
 }
 var firstExample = generateValueAndChangeFunction();
-(0, react_1.storiesOf)('TextFilter', module)
+react_1.storiesOf('TextFilter', module)
     .addDecorator(react_2.default)
     .add('Basic filter', function () { return (React.createElement(TextFilter_1.TextFilter, { placeholder: "This is a placeholder", value: firstExample.value, onChange: firstExample.onChange })); })
     .add('Basic filter with a name', function () { return (React.createElement(TextFilter_1.TextFilter, { placeholder: "This is a placeholder", label: "This is a label", value: firstExample.value, onChange: firstExample.onChange })); });

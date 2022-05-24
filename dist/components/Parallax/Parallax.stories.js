@@ -5,7 +5,7 @@ var react_1 = require("@storybook/react");
 var react_2 = require("@storybook/addon-centered/react");
 var Parallax_1 = require("./Parallax");
 require("./Parallax.stories.css");
-(0, react_1.storiesOf)('Parallax', module)
+react_1.storiesOf('Parallax', module)
     .addDecorator(react_2.default)
     .add('Depth', function () { return (React.createElement("div", { className: "Parallax-story" },
     React.createElement(Parallax_1.Parallax, null,

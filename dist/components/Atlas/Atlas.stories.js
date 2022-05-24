@@ -85,7 +85,7 @@ var App = function (_a) {
         React.createElement(Page_1.Page, { isFullscreen: true }, children),
         React.createElement(Footer_1.Footer, { isFullscreen: true })));
 };
-(0, react_1.storiesOf)('Atlas', module)
+react_1.storiesOf('Atlas', module)
     .add('Uncontrolled', function () { return (React.createElement(App, null,
     React.createElement(Atlas_1.Atlas, null))); })
     .add('Controlled', function () { return (React.createElement(App, null,

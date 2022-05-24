@@ -37,7 +37,7 @@ var selectedStrokeLayer = function (x, y) {
 var selectedFillLayer = function (x, y) {
     return isSelected(x, y) ? { color: '#ff9990', scale: 1.2 } : null;
 };
-(0, react_1.storiesOf)('Page', module)
+react_1.storiesOf('Page', module)
     .add('Regular page', function () {
     return (React.createElement("div", { className: "Page-story-container" },
         React.createElement(Navbar_1.Navbar, { activePage: "marketplace" }),

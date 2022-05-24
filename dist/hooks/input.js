@@ -4,14 +4,14 @@ exports.useInput = void 0;
 var react_1 = require("react");
 var useInput = function (value, onChange, ms) {
     if (ms === void 0) { ms = 500; }
-    var _a = (0, react_1.useState)(value), text = _a[0], setText = _a[1];
-    var handleChange = (0, react_1.useCallback)(function (event) { return setText(event.target.value); }, [setText]);
-    var timeout = (0, react_1.useRef)();
+    var _a = react_1.useState(value), text = _a[0], setText = _a[1];
+    var handleChange = react_1.useCallback(function (event) { return setText(event.target.value); }, [setText]);
+    var timeout = react_1.useRef();
     // flag to skip debounce
-    var skip = (0, react_1.useRef)(false);
+    var skip = react_1.useRef(false);
     // when value is changed from outside (controlled prop)
     // should update internal value and skip debounce
-    (0, react_1.useEffect)(function () {
+    react_1.useEffect(function () {
         if (value !== text) {
             skip.current = true;
             setText(value);
@@ -20,7 +20,7 @@ var useInput = function (value, onChange, ms) {
     }, [value]);
     // When internal value changes it
     // should start a debounced call to onChange
-    (0, react_1.useEffect)(function () {
+    react_1.useEffect(function () {
         if (timeout.current) {
             clearTimeout(timeout.current);
         }

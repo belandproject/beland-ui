@@ -30,7 +30,8 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  filter: var(--brightness);
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
 }
 
 .dcl.modal-navigation-button.modal-navigation-close {

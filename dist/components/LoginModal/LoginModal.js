@@ -7,8 +7,6 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -71,7 +69,7 @@ var LoginModalOption = /** @class */ (function (_super) {
                 subtitle = i18n.mobile;
                 break;
         }
-        return (React.createElement("div", { className: "dcl option ".concat(type), onClick: onClick },
+        return (React.createElement("div", { className: "dcl option " + type, onClick: onClick },
             React.createElement("div", { className: "image" }),
             React.createElement("div", { className: "info" },
                 React.createElement("div", { className: "title" }, title),
@@ -97,7 +95,7 @@ var LoginModal = /** @class */ (function (_super) {
         if (hasError) {
             errorClasses += ' visible';
         }
-        return (React.createElement(Modal_1.Modal, { open: open, className: "dcl login-modal ".concat(className).trim() },
+        return (React.createElement(Modal_1.Modal, { open: open, className: ("dcl login-modal " + className).trim() },
             React.createElement(ModalNavigation_1.ModalNavigation, { title: i18n.title, subtitle: i18n.subtitle, onClose: onClose }),
             React.createElement(ModalContent_1.default, null,
                 children,
