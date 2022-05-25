@@ -1,4 +1,4 @@
-.dcl.hero {
+.bld.hero {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -11,45 +11,45 @@
   margin-bottom: var(--navbar-margin-bottom);
 }
 
-.dcl.hero.centered {
+.bld.hero.centered {
   align-items: center;
 }
 
-.dcl.hero.centered .ui.header.hero-title {
+.bld.hero.centered .ui.header.hero-title {
   text-align: center;
 }
 
-.dcl.hero.centered .ui.header.hero-subtitle {
+.bld.hero.centered .ui.header.hero-subtitle {
   text-align: center;
 }
 
-.dcl.hero.centered .hero-actions {
+.bld.hero.centered .hero-actions {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.dcl.hero .ui.header.hero-title {
+.bld.hero .ui.header.hero-title {
   margin: calc(2rem - 0.14285714em) 0 1rem;
   position: relative;
   z-index: 15;
 }
 
-.dcl.hero .ui.header.hero-subtitle {
+.bld.hero .ui.header.hero-subtitle {
   margin-top: 0px;
   position: relative;
   font-weight: normal;
   z-index: 15;
 }
 
-.dcl.hero .hero-actions {
+.bld.hero .hero-actions {
   margin-top: 16px;
   position: relative;
   font-weight: normal;
   z-index: 15;
 }
 
-.dcl.hero .hero-content {
+.bld.hero .hero-content {
   position: absolute;
   top: 0px;
   left: 0px;

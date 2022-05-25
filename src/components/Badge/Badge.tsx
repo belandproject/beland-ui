@@ -10,7 +10,7 @@ export type BadgeProps = {
 export const Badge = (props: BadgeProps): JSX.Element => {
   const { color, className, children } = props
 
-  const classes = ['dcl', 'badge']
+  const classes = ['bld', 'badge']
   if (className) {
     classes.push(className)
   }

@@ -1,26 +1,26 @@
-.dcl.stats {
+.bld.stats {
   display: inline-flex;
   flex-flow: column nowrap;
   max-width: 100%;
 }
 
-.dcl.stats + .dcl.stats {
+.bld.stats + .bld.stats {
   margin-left: 6em;
 }
 
-.dcl.stats .ui.header.sub {
+.bld.stats .ui.header.sub {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
-  .dcl.stats {
+  .bld.stats {
     width: 50%;
     margin-bottom: 24px;
   }
 
-  .dcl.stats + .dcl.stats {
+  .bld.stats + .bld.stats {
     margin-left: 0px;
   }
 }

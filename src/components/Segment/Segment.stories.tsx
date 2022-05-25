@@ -71,7 +71,7 @@ storiesOf('Segment', module)
       <div className="Segment-radio-row">
         <Radio
           checked
-          label="Authorize marketplace to operate MANA on my behalf"
+          label="Authorize marketplace to operate BEAN on my behalf"
         />
       </div>
       <div className="Segment-radio-row">

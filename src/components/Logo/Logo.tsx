@@ -3,6 +3,6 @@ import './Logo.css'
 
 export class Logo extends React.PureComponent {
   render(): JSX.Element {
-    return <i className="dcl logo" />
+    return <i className="bld logo" />
   }
 }

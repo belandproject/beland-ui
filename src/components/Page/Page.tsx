@@ -16,7 +16,7 @@ export class Page extends React.PureComponent<PageProps> {
 
   render(): JSX.Element {
     const { isFullscreen, className, children } = this.props
-    let classes = 'dcl page'
+    let classes = 'bld page'
 
     if (isFullscreen) {
       classes += ' fullscreen'

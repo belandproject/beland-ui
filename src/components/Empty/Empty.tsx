@@ -11,7 +11,7 @@ export class Empty extends React.PureComponent<EmptyProps> {
   render(): JSX.Element {
     const { children, className, height, expand } = this.props
 
-    const classes = ['dcl', 'empty']
+    const classes = ['bld', 'empty']
     if (className) {
       classes.push(className)
     }

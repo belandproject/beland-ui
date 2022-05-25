@@ -1,4 +1,4 @@
-.dcl.tabs {
+.bld.tabs {
   display: flex;
   align-items: center;
   width: 100%;
@@ -6,16 +6,16 @@
   border-bottom: 1px solid #6E7198;
 }
 
-.dcl.tabs.fullscreen {
+.bld.tabs.fullscreen {
   border-bottom: 1px solid transparent;
   margin-bottom: 0px;
 }
 
-.dcl.tabs .dcl.tabs-left {
+.bld.tabs .bld.tabs-left {
   flex: 1 0 auto;
 }
 
-.dcl.tab {
+.bld.tab {
   position: relative;
   display: inline-block;
   padding: 12px 0px;
@@ -27,11 +27,11 @@
   font-weight: 500;
   color: #FEFEFE;
 }
-.dcl.tab.active {
+.bld.tab.active {
   font-weight: 600;
 }
 
-.dcl.tab .active-bar {
+.bld.tab .active-bar {
   position: absolute;
   bottom: -1.7px;
   left: 0px;
@@ -42,14 +42,14 @@
 }
 
 @media (max-width: 768px) {
-  .dcl.tabs,
-  .dcl.tabs.fullscreen {
+  .bld.tabs,
+  .bld.tabs.fullscreen {
     height: auto;
     margin-top: calc(var(--navbar-margin-bottom) / 2);
     margin-bottom: calc(var(--navbar-margin-bottom) / 2);
   }
 
-  .dcl.tab {
+  .bld.tab {
     display: block;
     font-size: 15px;
     padding: 0px 0px 0px 16px;
@@ -57,12 +57,12 @@
     border-bottom: none;
   }
 
-  .dcl.tab.active {
+  .bld.tab.active {
     border-bottom: none;
     border-left: 2px solid var(--primary);
   }
 
-  .dcl.tab .active-bar {
+  .bld.tab .active-bar {
     display: none;
   }
 }

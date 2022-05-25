@@ -5,10 +5,10 @@ import { Network } from '@beland/schemas'
 import { Header } from '../Header/Header'
 import { Bean } from './Bean'
 
-storiesOf('Mana', module)
+storiesOf('Bean', module)
   .addDecorator(centered)
   .add('Symbol', () => <Bean />)
-  .add('Symbol + MANA', () => <Bean>Bean</Bean>)
+  .add('Symbol + BEAN', () => <Bean>Bean</Bean>)
   .add('Total voted', () => (
     <>
       <Header sub>Total voted</Header>

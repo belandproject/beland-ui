@@ -9,7 +9,7 @@ export type CenterProps = {
 export class Center extends React.PureComponent<CenterProps> {
   render(): JSX.Element {
     const { screen, className, children } = this.props
-    let classes = `dcl center ${screen ? 'screen' : ''}`.trim()
+    let classes = `bld center ${screen ? 'screen' : ''}`.trim()
     if (className) {
       classes += ' ' + className
     }

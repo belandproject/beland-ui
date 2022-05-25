@@ -43,7 +43,7 @@ export class TagField extends React.PureComponent<TagFieldProps> {
 
   render(): JSX.Element {
     const { label, error, message, ...rest } = this.props
-    let classes = 'dcl tag-field'
+    let classes = 'bld tag-field'
 
     if (error) {
       classes += ' error'

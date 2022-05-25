@@ -9,7 +9,7 @@ export class Filter extends React.PureComponent<FilterProps> {
   render(): JSX.Element {
     const { active, children } = this.props
     return (
-      <div className={`dcl filter ${active ? 'active' : ''}`}>
+      <div className={`bld filter ${active ? 'active' : ''}`}>
         <div className="filter-background" />
         <span>{children}</span>
       </div>

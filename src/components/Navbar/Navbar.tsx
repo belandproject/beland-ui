@@ -25,7 +25,7 @@ export type NavbarI18N = {
 }
 
 export type NavbarProps = {
-  mana?: number
+  bean?: number
   address?: string
   activePage?:
     | 'marketplace'
@@ -56,7 +56,7 @@ export type NavbarState = {
 
 export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
   static defaultProps: Partial<NavbarProps> = {
-    mana: null,
+    bean: null,
     address: null,
     activePage: null,
     leftMenu: null,
@@ -156,7 +156,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
       middleMenu,
       isConnected,
       onClickAccount,
-      mana,
+      bean,
       address,
       isConnecting,
       isSignIn,
@@ -170,20 +170,20 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
         <>
           {middleMenu ? (
             <NotMobile>
-              <Menu secondary className="dcl navbar-account-menu">
+              <Menu secondary className="bld navbar-account-menu">
                 {middleMenu}
               </Menu>
             </NotMobile>
           ) : null}
           <span
-            className={`dcl account-wrapper ${
+            className={`bld account-wrapper ${
               onClickAccount ? 'clickable' : ''
             }`}
             onClick={onClickAccount}
           >
-            {mana != null ? (
-              <Bean size="small" title={`${mana.toLocaleString()} MANA`}>
-                {Math.floor(mana).toLocaleString()}
+            {bean != null ? (
+              <Bean size="small" title={`${bean.toLocaleString()} BEAN`}>
+                {Math.floor(bean).toLocaleString()}
               </Bean>
             ) : null}
             {address != null ? <Blockie seed={address} /> : null}
@@ -213,7 +213,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
     const { activePage, className, isSignIn, isFullscreen, isOverlay } =
       this.props
 
-    let classes = `dcl navbar`
+    let classes = `bld navbar`
 
     if (this.state.toggle) {
       classes += ' open'
@@ -238,22 +238,22 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
     return (
       <div className={classes} role="navigation">
         <Container>
-          <div className="dcl navbar-menu">
+          <div className="bld navbar-menu">
             <NotMobile>
               <Menu secondary stackable>
-                <a className="dcl navbar-logo" href="https://beland.io">
+                <a className="bld navbar-logo" href="https://beland.io">
                   <Logo />
                 </a>
               </Menu>
             </NotMobile>
             <Mobile>
-              <div className="dcl navbar-mobile-menu">
-                <a className="dcl navbar-logo" href="https://beland.io">
+              <div className="bld navbar-mobile-menu">
+                <a className="bld navbar-logo" href="https://beland.io">
                   <Logo />
                 </a>
                 <Header
                   size="small"
-                  className={`dcl active-page ${
+                  className={`bld active-page ${
                     this.state.toggle ? 'caret-up' : 'caret-down'
                   }`}
                   onClick={this.handleToggle}
@@ -263,7 +263,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
               </div>
             </Mobile>
           </div>
-          <div className="dcl navbar-account">
+          <div className="bld navbar-account">
             <NotMobile>
               <Menu secondary stackable>
                 <div className="desktop-menu">{this.renderLeftMenu()}</div>

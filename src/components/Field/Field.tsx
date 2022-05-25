@@ -42,7 +42,7 @@ export class Field extends React.PureComponent<FieldProps> {
       ...rest
     } = this.props
     const isAddress = this.isAddress()
-    let classes = 'dcl field'
+    let classes = 'bld field'
 
     if (error) {
       classes += ' error'

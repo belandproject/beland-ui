@@ -22,7 +22,7 @@ export type UserMenuProps = {
   isActivity: boolean
   hasActivity: boolean
   address?: string
-  manaBalances?: Partial<Record<Network, number>>
+  beanBalances?: Partial<Record<Network, number>>
   avatar?: Avatar
   menuItems?: React.ReactNode
   i18n: UserMenuI18N
@@ -41,7 +41,7 @@ export type UserMenuState = {
 
 export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
   static defaultProps: Partial<UserMenuProps> = {
-    manaBalances: {},
+    beanBalances: {},
     i18n: {
       signIn: 'Sign In',
       signOut: 'Sign Out',
@@ -88,7 +88,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
   render(): JSX.Element {
     const {
       avatar,
-      manaBalances,
+      beanBalances,
       isSignedIn,
       isSigningIn,
       isActivity,
@@ -108,7 +108,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
     const name = avatar ? avatar.name : null
 
     return (
-      <Row className="dcl user-menu-wrapper">
+      <Row className="bld user-menu-wrapper">
         <Menu.Item
           className={isActivity ? 'activity-bell active' : 'activity-bell'}
         >
@@ -120,20 +120,20 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
             />
           ) : null}
         </Menu.Item>
-        <div className="dcl user-menu" onBlur={this.handleClose} tabIndex={0}>
+        <div className="bld user-menu" onBlur={this.handleClose} tabIndex={0}>
           {isSignedIn && (
             <>
-              <span className="dcl account-wrapper">
-                {Object.keys(manaBalances).map((network) => (
+              <span className="bld account-wrapper">
+                {Object.keys(beanBalances).map((network) => (
                   <Bean
                     key={network}
                     network={network as Network}
                     size="small"
                     className={onClickBalance ? 'clickable' : undefined}
-                    title={`${manaBalances[network].toLocaleString()} MANA`}
+                    title={`${beanBalances[network].toLocaleString()} BEAN`}
                     href="https://beland.io"
                   >
-                    {Math.floor(manaBalances[network]).toLocaleString()}
+                    {Math.floor(beanBalances[network]).toLocaleString()}
                   </Bean>
                 ))}
               </span>

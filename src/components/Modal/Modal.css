@@ -108,7 +108,7 @@
 
 .ui.modal .header,
 .ui.modal > :first-child:not(.icon),
-.ui.modal > :first-child.dcl.close + .content {
+.ui.modal > :first-child.bld.close + .content {
   border-top-left-radius: var(--modal-border-radius);
   border-top-right-radius: var(--modal-border-radius);
 }

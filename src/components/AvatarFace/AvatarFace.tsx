@@ -15,7 +15,7 @@ export class AvatarFace extends React.PureComponent<AvatarFaceProps> {
 
   render(): JSX.Element {
     const { avatar, size, inline } = this.props
-    const classes = ['dcl', 'avatar-face', size]
+    const classes = ['bld', 'avatar-face', size]
     let face
     if (avatar) {
       face = <img src={avatar.avatar.snapshots.face256} alt="" />

@@ -1,6 +1,6 @@
 {
   "name": "@beland/uikit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Beland's UI components and styles",
   "main": "lib/index.js",
   "module": "dist/index.js",
@@ -32,7 +32,7 @@
     "styles",
     "themes"
   ],
-  "author": "Decentraland",
+  "author": "Beland",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/belandproject/beland-ui/issues"

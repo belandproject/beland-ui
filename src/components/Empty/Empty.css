@@ -1,4 +1,4 @@
-.dcl.empty {
+.bld.empty {
   position: relative;
   border: 1px solid var(--secondary-text);
   border-radius: 8px;
@@ -9,7 +9,7 @@
   padding: 8px;
 }
 
-.dcl.empty.expand {
+.bld.empty.expand {
   position: absolute;
   top: 0px;
   left: 0px;

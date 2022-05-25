@@ -1,4 +1,4 @@
-.dcl.back {
+.bld.back {
   background-image: url(../../assets/back.svg);
   background-repeat: no-repeat;
   background-position-x: 15px;
@@ -13,7 +13,7 @@
   padding: 8px;
 }
 
-.dcl.back:before {
+.bld.back:before {
   content: "";
   position: absolute;
   left: 0; right: 0;
@@ -23,12 +23,12 @@
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.dcl.back:hover {
+.bld.back:hover {
   border: solid 1px rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 768px) {
-  .dcl.back {
+  .bld.back {
     width: 32px;
     height: 32px;
     background-size: 15px;
@@ -36,7 +36,7 @@
     background-position-y: 9px;
   }
 
-  .dcl.back:before {
+  .bld.back:before {
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }

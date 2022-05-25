@@ -1,8 +1,8 @@
-.dcl.login-modal {
+.bld.login-modal {
   width: 520px;
 }
 
-.dcl.login-modal .dcl.option {
+.bld.login-modal .bld.option {
   width: 360px;
   height: 80px;
   box-shadow: var(--shadow-1);
@@ -15,11 +15,11 @@
   cursor: pointer;
 }
 
-.dcl.login-modal .dcl.option:hover {
+.bld.login-modal .bld.option:hover {
   background-color: var(--secondary-on-modal-hover);
 }
 
-.dcl.login-modal .dcl.option .image {
+.bld.login-modal .bld.option .image {
   flex: none;
   width: 64px;
   height: 64px;
@@ -27,60 +27,60 @@
   background-size: contain;
 }
 
-.dcl.option.metamask .image {
+.bld.option.metamask .image {
   background-image: inline('../../images/metamask.svg');
 }
 
-.dcl.option.dapper .image {
+.bld.option.dapper .image {
   background-image: inline('../../images/dapper.png');
 }
 
-.dcl.option.fortmatic .image {
+.bld.option.fortmatic .image {
   background-image: inline('../../images/fortmatic.png');
 }
 
-.dcl.option.wallet-connect .image {
+.bld.option.wallet-connect .image {
   background-image: inline('../../images/wallet-connect.png');
 }
 
-.dcl.option.samsung-blockchain-wallet .image {
+.bld.option.samsung-blockchain-wallet .image {
   background-image: inline('../../images/samsung-blockchain-wallet.svg');
 }
 
-.dcl.option.coinbase .image,
-.dcl.option.wallet-link .image {
+.bld.option.coinbase .image,
+.bld.option.wallet-link .image {
   background-image: inline('../../images/coinbase.svg');
 }
 
-.dcl.login-modal .dcl.option .info {
+.bld.login-modal .bld.option .info {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   margin-left: 16px;
 }
 
-.dcl.login-modal .dcl.option .info .title {
+.bld.login-modal .bld.option .info .title {
   font-weight: bold;
   color: var(--text);
 }
 
-.dcl.login-modal .dcl.option .info .subtitle {
+.bld.login-modal .bld.option .info .subtitle {
   color: var(--secondary-text);
   margin-top: 4px;
 }
 
-.dcl.login-modal .dcl.option + .dcl.option {
+.bld.login-modal .bld.option + .bld.option {
   margin-top: 16px;
 }
 
-.dcl.login-modal .content {
+.bld.login-modal .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 28px;
 }
 
-.dcl.login-modal .message {
+.bld.login-modal .message {
   margin-top: 28px;
   text-align: center;
   display: block;
@@ -89,7 +89,7 @@
   opacity: 0.9;
 }
 
-.dcl.login-modal .error {
+.bld.login-modal .error {
   opacity: 0;
   user-select: none;
   color: var(--primary);
@@ -97,13 +97,13 @@
   text-align: center;
 }
 
-.dcl.login-modal .error.visible {
+.bld.login-modal .error.visible {
   transition: opacity 0.25s ease;
   opacity: 1;
   user-select: auto;
 }
 
-.dcl.login-modal .loader-background {
+.bld.login-modal .loader-background {
   height: 100%;
   width: 100%;
   background-color: var(--background);

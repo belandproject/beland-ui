@@ -49,7 +49,7 @@ export class LanguageDropdown extends React.PureComponent<LanguageDropdownProps>
     const { locale, locales, direction, upward, onChange } = this.props
     return (
       <Dropdown
-        className="dcl language-dropdown"
+        className="bld language-dropdown"
         direction={direction}
         upward={upward}
         defaultValue={locale == null ? 'en' : undefined}

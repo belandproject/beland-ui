@@ -1,30 +1,30 @@
-.dcl.column {
+.bld.column {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 }
 
-.dcl.column.left {
+.bld.column.left {
   align-items: flex-start;
 }
 
-.dcl.column.right {
+.bld.column.right {
   align-items: flex-end;
 }
 
-.dcl.column.center {
+.bld.column.center {
   align-items: center;
 }
 
-.dcl.column.grow {
+.bld.column.grow {
   flex: 1 0 auto;
 }
 
-.dcl.column.shrink {
+.bld.column.shrink {
   flex: 0 1 auto;
 }
 
-.dcl.column.grow.shrink {
+.bld.column.grow.shrink {
   flex: 1 1 auto;
 }

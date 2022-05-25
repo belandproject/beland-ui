@@ -61,7 +61,7 @@ export class Hero extends React.PureComponent<HeroProps> {
       style = { width, height }
     }
     return (
-      <div className={'dcl hero' + classes} style={style}>
+      <div className={'bld hero' + classes} style={style}>
         {children}
       </div>
     )

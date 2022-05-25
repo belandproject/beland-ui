@@ -110,7 +110,7 @@ export class Atlas extends React.PureComponent<AtlasProps, AtlasState> {
 
   render(): JSX.Element {
     const { layers, className, ...rest } = this.props
-    const classes = 'dcl atlas ' + className
+    const classes = 'bld atlas ' + className
 
     return (
       <TileMap

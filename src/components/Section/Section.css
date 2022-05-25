@@ -1,23 +1,23 @@
-.dcl.section {
+.bld.section {
   position: relative;
 }
 
-.dcl.section.tiny {
+.bld.section.tiny {
   margin-bottom: 8px;
 }
 
-.dcl.section.small {
+.bld.section.small {
   margin-bottom: 24px;
 }
 
-.dcl.section.medium {
+.bld.section.medium {
   margin-bottom: 32px;
 }
 
-.dcl.section.large {
+.bld.section.large {
   margin-bottom: 48px;
 }
 
-.dcl.section .ui.header.sub {
+.bld.section .ui.header.sub {
   margin-bottom: 8px;
 }

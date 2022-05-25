@@ -33,7 +33,7 @@ export class Column extends React.PureComponent<ColumnProps> {
       shrink,
       onClick
     } = this.props
-    const classes = ['dcl', 'column']
+    const classes = ['bld', 'column']
     if (center) {
       console.warn(
         `The prop 'center' has been deprecated from <Column> component, use aligh="center" instead.`

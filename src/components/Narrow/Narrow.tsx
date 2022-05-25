@@ -9,7 +9,7 @@ export class Narrow extends React.PureComponent<NarrowProps> {
   render(): JSX.Element {
     const { children, className } = this.props
 
-    const classes = ['dcl', 'narrow']
+    const classes = ['bld', 'narrow']
     if (className) {
       classes.push(className)
     }

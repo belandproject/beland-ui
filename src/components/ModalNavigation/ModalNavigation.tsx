@@ -12,20 +12,20 @@ export class ModalNavigation extends React.PureComponent<ModalNavigationProps> {
   render(): JSX.Element {
     const { title, subtitle, onBack, onClose } = this.props
     return (
-      <div className="dcl modal-navigation">
-        <div className="dcl modal-navigation-title">{title}</div>
+      <div className="bld modal-navigation">
+        <div className="bld modal-navigation-title">{title}</div>
         {subtitle && (
-          <div className="dcl modal-navigation-subtitle">{subtitle}</div>
+          <div className="bld modal-navigation-subtitle">{subtitle}</div>
         )}
         {onBack && (
           <div
-            className="dcl modal-navigation-button modal-navigation-back"
+            className="bld modal-navigation-button modal-navigation-back"
             onClick={onBack}
           />
         )}
         {onClose && (
           <div
-            className="dcl modal-navigation-button modal-navigation-close"
+            className="bld modal-navigation-button modal-navigation-close"
             onClick={onClose}
           />
         )}

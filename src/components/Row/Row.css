@@ -1,60 +1,60 @@
-.dcl.row {
+.bld.row {
   position: relative;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
 
-.dcl.row.grow {
+.bld.row.grow {
   flex: 1 0 auto;
 }
 
-.dcl.row.shrink {
+.bld.row.shrink {
   flex: 0 1 auto;
 }
 
-.dcl.row.grow.shrink {
+.bld.row.grow.shrink {
   flex: 1 1 auto;
 }
 
-.dcl.row.left {
+.bld.row.left {
   justify-content: flex-start;
 }
 
-.dcl.row.right {
+.bld.row.right {
   justify-content: flex-end;
 }
 
-.dcl.row.center {
+.bld.row.center {
   justify-content: center;
 }
 
-.dcl.row > .ui.header {
+.bld.row > .ui.header {
   margin: 0px !important;
 }
 
-.dcl.row > .ui.button.basic {
+.bld.row > .ui.button.basic {
   padding: 0px;
 }
 
-.dcl.row > .ui.button + .ui.button,
-.dcl.row > .ui.dropdown + .ui.button,
-.dcl.row > .ui.dropdown + .ui.dropdown,
-.dcl.row > .ui.button + .ui.dropdown,
-.dcl.row > .ui.checkbox + .ui.checkbox {
+.bld.row > .ui.button + .ui.button,
+.bld.row > .ui.dropdown + .ui.button,
+.bld.row > .ui.dropdown + .ui.dropdown,
+.bld.row > .ui.button + .ui.dropdown,
+.bld.row > .ui.checkbox + .ui.checkbox {
   margin-left: 16px;
 }
 
 @media (max-width: 768px) {
-  .dcl.row.stacked {
+  .bld.row.stacked {
     flex-direction: column;
   }
 
-  .dcl.row.stacked > .ui.button + .ui.button,
-  .dcl.row.stacked > .ui.dropdown + .ui.button,
-  .dcl.row.stacked > .ui.dropdown + .ui.dropdown,
-  .dcl.row.stacked > .ui.button + .ui.dropdown,
-  .dcl.row > .ui.checkbox + .ui.checkbox {
+  .bld.row.stacked > .ui.button + .ui.button,
+  .bld.row.stacked > .ui.dropdown + .ui.button,
+  .bld.row.stacked > .ui.dropdown + .ui.dropdown,
+  .bld.row.stacked > .ui.button + .ui.dropdown,
+  .bld.row > .ui.checkbox + .ui.checkbox {
     margin-top: 16px;
     margin-left: 0px;
   }

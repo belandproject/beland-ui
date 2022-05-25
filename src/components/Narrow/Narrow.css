@@ -1,4 +1,4 @@
-.dcl.narrow {
+.bld.narrow {
   position: relative;
   width: 944px;
   margin-left: auto;
@@ -6,19 +6,19 @@
 }
 
 @media (max-width: 1200px) {
-  .dcl.narrow {
+  .bld.narrow {
     width: 820px;
   }
 }
 
 @media (max-width: 991px) {
-  .dcl.narrow {
+  .bld.narrow {
     width: 600px;
   }
 }
 
 @media (max-width: 768px) {
-  .dcl.narrow {
+  .bld.narrow {
     width: 100%;
   }
 }

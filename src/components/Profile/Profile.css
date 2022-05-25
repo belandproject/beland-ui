@@ -6,28 +6,28 @@
   display: inline;
 }
 
-.Profile.inline .dcl.avatar-face.inline,
-.Profile.inline .dcl.logo {
+.Profile.inline .bld.avatar-face.inline,
+.Profile.inline .bld.logo {
   vertical-align: -4px;
   margin-right: 6px;
 }
 
-.Profile.inline .dcl.blockie {
+.Profile.inline .bld.blockie {
   margin-right: 6px;
 }
 
-.Profile .dcl.logo {
+.Profile .bld.logo {
   width: 20px;
   height: 20px;
 }
 
-.Profile.large .dcl.avatar-face,
-.Profile.large .dcl.logo {
+.Profile.large .bld.avatar-face,
+.Profile.large .bld.logo {
   width: 32px;
   height: 32px;
 }
 
-.Profile.large.inline .dcl.blockie {
+.Profile.large.inline .bld.blockie {
   vertical-align: -6px;
   margin-right: 12px;
 }
@@ -37,20 +37,20 @@
   line-height: 28px;
 }
 
-.Profile.huge .dcl.avatar-face,
-.Profile.huge .dcl.logo {
+.Profile.huge .bld.avatar-face,
+.Profile.huge .bld.logo {
   width: 48px;
   height: 48px;
 }
 
-/* .Profile.inline .dcl.avatar-face,
-.Profile.inline .dcl.logo {
+/* .Profile.inline .bld.avatar-face,
+.Profile.inline .bld.logo {
   vertical-align: -8px;
   margin-right: 10px;
 } */
 
-.Profile.massive .dcl.avatar-face,
-.Profile.massive .dcl.logo {
+.Profile.massive .bld.avatar-face,
+.Profile.massive .bld.logo {
   width: 180px;
   height: 180px;
 }

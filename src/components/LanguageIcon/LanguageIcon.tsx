@@ -11,12 +11,12 @@ export type LanguageIconProps = {
 
 export class LanguageIcon extends React.PureComponent<LanguageIconProps> {
   renderIcon(): JSX.Element {
-    return <i className={`dcl language-icon ${this.props.locale}`} />
+    return <i className={`bld language-icon ${this.props.locale}`} />
   }
 
   render(): JSX.Element {
     return this.props.label ? (
-      <div className="dcl language-icon-wrapper">
+      <div className="bld language-icon-wrapper">
         {this.renderIcon()}
         <div className="language-icon-label">{this.props.label}</div>
       </div>

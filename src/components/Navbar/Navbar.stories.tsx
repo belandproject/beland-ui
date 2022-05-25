@@ -61,7 +61,7 @@ storiesOf('Navbar', module)
           activePage="dao"
           isConnected
           address="0x68FFc53C43C65C8Dd778969320e21B85b10363cE"
-          mana={200000}
+          bean={200000}
         />
       </div>
     )
@@ -73,7 +73,7 @@ storiesOf('Navbar', module)
           activePage="dao"
           isConnected
           address="0x68FFc53C43C65C8Dd778969320e21B85b10363cE"
-          mana={200000}
+          bean={200000}
           onClickAccount={() => console.log('Clicked on account menu')}
         />
       </div>
@@ -88,7 +88,7 @@ storiesOf('Navbar', module)
           activePage="dao"
           isConnected
           address="0x68FFc53C43C65C8Dd778969320e21B85b10363cE"
-          mana={200000}
+          bean={200000}
           onClickAccount={() => console.log('Clicked on account menu')}
           isFullscreen
         />
@@ -137,7 +137,7 @@ storiesOf('Navbar', module)
           activePage="dao"
           isConnected
           address="0x68FFc53C43C65C8Dd778969320e21B85b10363cE"
-          mana={200000}
+          bean={200000}
           onClickAccount={() => console.log('Clicked on account menu')}
           middleMenu={
             <Menu.Item>
@@ -158,7 +158,7 @@ storiesOf('Navbar', module)
           activePage="dao"
           isConnected
           address="0x68FFc53C43C65C8Dd778969320e21B85b10363cE"
-          mana={200000}
+          bean={200000}
           onClickAccount={() => console.log('Clicked on account menu')}
           leftMenu={
             <>
@@ -178,7 +178,7 @@ storiesOf('Navbar', module)
           activePage="dao"
           isConnected
           address="0x68FFc53C43C65C8Dd778969320e21B85b10363cE"
-          mana={200000}
+          bean={200000}
           onClickAccount={() => console.log('Clicked on account menu')}
           rightMenu={
             <Button primary size="small" style={{ minWidth: 100 }}>
@@ -196,7 +196,7 @@ storiesOf('Navbar', module)
           activePage="dao"
           isConnected
           address="0x68FFc53C43C65C8Dd778969320e21B85b10363cE"
-          mana={200000}
+          bean={200000}
           onClickAccount={() => console.log('Clicked on account menu')}
           rightMenu={<UserMenu avatar={avatar} isSignedIn />}
         />

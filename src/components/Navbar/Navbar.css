@@ -1,4 +1,4 @@
-.dcl.navbar {
+.bld.navbar {
   position: relative;
   height: var(--navbar-height);
   width: 100%;
@@ -10,43 +10,43 @@
   padding-bottom: 16px;
 }
 
-.dcl.navbar.fullscreen {
+.bld.navbar.fullscreen {
   margin-bottom: 0px;
   border-bottom: none;
 }
 
-.dcl.navbar.overlay {
+.bld.navbar.overlay {
   position: absolute;
 }
 
-.dcl.navbar.open {
+.bld.navbar.open {
   z-index: var(--z-index-navbar);
 }
 
-.dcl.navbar.open .ui.container {
+.bld.navbar.open .ui.container {
   background-color: var(--navbar-popup);
   z-index: calc(var(--z-index-navbar) + 10);
 }
 
-.dcl.navbar .desktop-menu {
+.bld.navbar .desktop-menu {
   display: flex;
 }
 
-.dcl.navbar .navbar-menu {
+.bld.navbar .navbar-menu {
   position: relative;
 }
 
-.dcl.navbar .navbar-mobile-menu {
+.bld.navbar .navbar-mobile-menu {
   display: flex;
   align-items: center;
 }
 
-.dcl.navbar .navbar-mobile-menu .ui.header {
+.bld.navbar .navbar-mobile-menu .ui.header {
   font-weight: bold;
   margin-left: 16px;
 }
 
-.dcl.navbar .ui.container {
+.bld.navbar .ui.container {
   position: relative;
   display: flex;
   flex-flow: row nowrap;
@@ -57,22 +57,22 @@
   transition: background-color 0.25s ease;
 }
 
-.dcl.navbar-logo {
+.bld.navbar-logo {
   cursor: pointer;
   margin-top: 2px;
 }
 
-.dcl.account-wrapper {
+.bld.account-wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
 
-.dcl.account-wrapper.clickable {
+.bld.account-wrapper.clickable {
   cursor: pointer;
 }
 
-.dcl.account-wrapper .dcl.mana {
+.bld.account-wrapper .bld.bean {
   display: inline-block;
   margin: 0px 20px 0px 0px;
   color: var(--text);
@@ -80,38 +80,38 @@
   line-height: 18px;
 }
 
-.dcl.account-wrapper .dcl.mana .symbol .ethereum {
+.bld.account-wrapper .bld.bean .symbol .ethereum {
   font-size: 14px;
 }
 
-.dcl.account-wrapper .dcl.blockie {
+.bld.account-wrapper .bld.blockie {
   width: 32px;
   height: 32px;
 }
 
-.dcl.account-wrapper .dcl.blockie {
+.bld.account-wrapper .bld.blockie {
   margin-top: -0.2em;
 }
 
-.dcl.navbar-account {
+.bld.navbar-account {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
 
-.dcl.navbar-account .ui.menu.ui.menu.secondary.navbar-account-menu {
+.bld.navbar-account .ui.menu.ui.menu.secondary.navbar-account-menu {
   margin: 0px 24px 0px 0px;
 }
 
-.dcl.navbar-account .ui.menu.navbar-account-menu .item .icon {
+.bld.navbar-account .ui.menu.navbar-account-menu .item .icon {
   margin: 0em;
 }
 
-.dcl.navbar .ui.menu.secondary {
+.bld.navbar .ui.menu.secondary {
   margin: 0px;
 }
 
-.dcl.navbar .ui.menu .item {
+.bld.navbar .ui.menu .item {
   font-weight: normal;
   color: var(--secondary-text);
   border-radius: 6px;
@@ -122,19 +122,19 @@
   line-height: 18px;
 }
 
-.dcl.navbar .ui.menu .item.disabled {
+.bld.navbar .ui.menu .item.disabled {
   color: var(--secondary-text) !important;
   opacity: 0.5;
 }
 
-.dcl.navbar .ui.menu .item:hover,
-.dcl.navbar .ui.menu .item.active {
+.bld.navbar .ui.menu .item:hover,
+.bld.navbar .ui.menu .item.active {
   color: var(--text);
   background: transparent;
   cursor: pointer;
 }
 
-.dcl.active-page {
+.bld.active-page {
   color: var(--text);
   display: inline-block;
   text-transform: uppercase;
@@ -142,7 +142,7 @@
   margin: 0px;
 }
 
-.dcl.active-page::after {
+.bld.active-page::after {
   content: ' ';
   width: 12px;
   height: 7px;
@@ -155,22 +155,22 @@
   transition: transform 0.25s ease;
 }
 
-.dcl.active-page.caret-down::after {
+.bld.active-page.caret-down::after {
   transform: rotateZ(0deg) translateY(-1px);
 }
 
-.dcl.active-page.caret-up::after {
+.bld.active-page.caret-up::after {
   transform: rotateZ(180deg) translateY(1px);
 }
 
-.dcl.navbar .children-wrapper {
+.bld.navbar .children-wrapper {
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
 }
 
-.dcl.navbar .mobile-menu {
+.bld.navbar .mobile-menu {
   position: relative;
   display: none;
   padding-top: 0px;
@@ -180,51 +180,51 @@
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
 }
 
-.dcl.navbar.sign-in .ui.menu .item.sign-in-button {
+.bld.navbar.sign-in .ui.menu .item.sign-in-button {
   color: var(--primary);
   font-weight: bold;
   cursor: default;
 }
 
 @media (max-width: 768px) {
-  .dcl.navbar-logo {
+  .bld.navbar-logo {
     cursor: pointer;
     width: 36px;
     height: 36px;
   }
 
-  .dcl.navbar .ui.container {
+  .bld.navbar .ui.container {
     width: calc(100%) !important;
     padding: 0px 16px;
     margin: 0px !important;
   }
 
-  .dcl.navbar.overlay .ui.container {
+  .bld.navbar.overlay .ui.container {
     width: calc(100%) !important;
   }
 
-  .dcl.navbar-logo {
+  .bld.navbar-logo {
     cursor: pointer;
     width: 32px;
     height: 32px;
     margin-top: 0px;
   }
 
-  .dcl.navbar .mobile-menu {
+  .bld.navbar .mobile-menu {
     display: flex;
     flex-flow: column;
     pointer-events: none;
     background-color: var(--navbar-popup);
   }
 
-  .dcl.navbar.open .mobile-menu {
+  .bld.navbar.open .mobile-menu {
     pointer-events: all;
     opacity: 1;
     transform: translateY(0px);
     box-shadow: var(--shadow-3);
   }
 
-  .dcl.navbar .mobile-menu .item {
+  .bld.navbar .mobile-menu .item {
     padding: 19px 65px;
     text-transform: uppercase;
     font-weight: normal;
@@ -233,12 +233,12 @@
     color: var(--text);
   }
 
-  .dcl.navbar .mobile-menu .item.active {
+  .bld.navbar .mobile-menu .item.active {
     background-color: var(--navbar-popup-hover);
     font-weight: bold;
   }
 
-  .dcl.navbar .mobile-menu .item:hover {
+  .bld.navbar .mobile-menu .item:hover {
     color: var(--text);
     background-color: var(--navbar-popup-hover);
   }

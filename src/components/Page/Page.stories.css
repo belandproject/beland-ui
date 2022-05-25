@@ -6,15 +6,15 @@
   height: 450px;
 }
 
-.Page-story-container .dcl.hero {
+.Page-story-container .bld.hero {
   background: var(--luisxvi-violet);
 }
 
-.Page-story-container .dcl.hero .ui.header {
+.Page-story-container .bld.hero .ui.header {
   color: white;
 }
 
-.dcl.page.table-story .ui.table .dcl.atlas {
+.bld.page.table-story .ui.table .bld.atlas {
   margin-top: -22px;
   border-radius: 8px;
   overflow: hidden;

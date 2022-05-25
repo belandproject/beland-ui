@@ -1,4 +1,4 @@
-.dcl.page {
+.bld.page {
   position: relative;
   padding: 0px 0px;
   min-height: calc(
@@ -7,25 +7,25 @@
   );
 }
 
-.dcl.navbar.fullscreen + .dcl.page {
+.bld.navbar.fullscreen + .bld.page {
   min-height: calc(
     100vh - var(--navbar-height) - var(--footer-height) -
       var(--footer-margin-top) - 1px
   );
 }
 
-.dcl.navbar.fullscreen + .dcl.page.fullscreen {
+.bld.navbar.fullscreen + .bld.page.fullscreen {
   min-height: calc(100vh - var(--navbar-height) - var(--footer-height) - 1px);
 }
 
-.dcl.navbar.fullscreen + .dcl.tabs + .dcl.page.dcl.page.fullscreen {
+.bld.navbar.fullscreen + .bld.tabs + .bld.page.bld.page.fullscreen {
   min-height: calc(
     100vh - var(--navbar-height) - var(--tabs-height) -
       var(--tabs-margin-bottom) - var(--footer-height) - 1px
   );
 }
 
-.dcl.navbar.fullscreen + .dcl.tabs.fullscreen + .dcl.page.dcl.page.fullscreen {
+.bld.navbar.fullscreen + .bld.tabs.fullscreen + .bld.page.bld.page.fullscreen {
   min-height: calc(
     100vh - var(--navbar-height) - var(--tabs-height) - var(--footer-height) -
       1px
@@ -33,13 +33,13 @@
 }
 
 @media (max-width: 768px) {
-  .dcl.page {
+  .bld.page {
     padding: 0px 0px 48px 0px;
   }
-  .dcl.page.fullscreen {
+  .bld.page.fullscreen {
     padding: 0px;
   }
-  .dcl.navbar.fullscreen + .dcl.page.fullscreen {
+  .bld.navbar.fullscreen + .bld.page.fullscreen {
     min-height: calc(
       100vh - var(--navbar-height) - var(--footer-height) -
         var(--footer-margin-top) - 1px

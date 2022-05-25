@@ -1,15 +1,15 @@
-.dcl.mana {
+.bld.bean {
   display: inline;
   text-overflow: ellipsis;
   overflow: hidden;
   color: inherit;
 }
-.dcl.mana .symbol {
+.bld.bean .symbol {
   padding-right: 0.3em;
   display: inline-block;
 }
 
-.dcl.mana .symbol .ethereum {
+.bld.bean .symbol .ethereum {
   display: inline-block;
   width: 0.8125em;
   height: 0.875em;
@@ -18,18 +18,18 @@
   background-size: cover;
 }
 
-.dcl.mana + .dcl.mana {
+.bld.bean + .bld.bean {
   padding-left: 0.3em;
 }
 
-.dcl.mana.inline {
+.bld.bean.inline {
   font-size: 1em;
 }
 
-.dcl.mana .matic {
+.bld.bean .matic {
   width: 1em;
   height: 1em;
-  background-image: url(../../assets/mana-l2.svg);
+  background-image: url(../../assets/bean-l2.svg);
   display: inline-block;
   background-size: contain;
   filter: var(--brightness);

@@ -84,7 +84,7 @@ export class Footer extends React.PureComponent<FooterProps> {
     const { i18n, isFullscreen, className } =
       this.props
 
-    let classes = 'dcl footer'
+    let classes = 'bld footer'
     if (isFullscreen) {
       classes += ' fullscreen'
     }
@@ -96,7 +96,7 @@ export class Footer extends React.PureComponent<FooterProps> {
       <Container className={classes}>
         <div className="main-footer">
             <div>
-              <a className="dcl navbar-logo" href="https://beland.io">
+              <a className="bld navbar-logo" href="https://beland.io">
                 <Logo />
               </a>
               <div className='des'>{i18n.content.description}</div>

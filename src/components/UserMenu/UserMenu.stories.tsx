@@ -41,18 +41,18 @@ storiesOf('UserMenu', module)
       }
     />
   ))
-  .add('Mana', () => (
+  .add('Bean', () => (
     <UserMenu
       isSignedIn
       avatar={avatar}
-      manaBalances={{ [Network.ETHEREUM]: 1000 }}
+      beanBalances={{ [Network.ETHEREUM]: 1000 }}
     />
   ))
-  .add('Mana L2', () => (
+  .add('Bean L2', () => (
     <UserMenu
       isSignedIn
       avatar={avatar}
-      manaBalances={{ [Network.ETHEREUM]: 1000, [Network.MATIC]: 2500 }}
+      beanBalances={{ [Network.ETHEREUM]: 1000, [Network.MATIC]: 2500 }}
     />
   ))
   .add('Activity', () => (
@@ -61,7 +61,7 @@ storiesOf('UserMenu', module)
       avatar={avatar}
       onClickSettings={() => undefined}
       onClickActivity={() => undefined}
-      manaBalances={{ [Network.ETHEREUM]: 1000, [Network.MATIC]: 2500 }}
+      beanBalances={{ [Network.ETHEREUM]: 1000, [Network.MATIC]: 2500 }}
       menuItems={
         <>
           <MenuItem>
@@ -78,7 +78,7 @@ storiesOf('UserMenu', module)
       avatar={avatar}
       onClickSettings={() => undefined}
       onClickActivity={() => undefined}
-      manaBalances={{ [Network.ETHEREUM]: 1000, [Network.MATIC]: 2500 }}
+      beanBalances={{ [Network.ETHEREUM]: 1000, [Network.MATIC]: 2500 }}
       hasActivity
       menuItems={
         <>

@@ -14,7 +14,7 @@ export declare type UserMenuProps = {
     isActivity: boolean;
     hasActivity: boolean;
     address?: string;
-    manaBalances?: Partial<Record<Network, number>>;
+    beanBalances?: Partial<Record<Network, number>>;
     avatar?: Avatar;
     menuItems?: React.ReactNode;
     i18n: UserMenuI18N;

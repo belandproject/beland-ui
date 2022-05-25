@@ -13,9 +13,9 @@ addParameters({
   options: {
     theme: create({
       base: 'light',
-      brandTitle: 'UI | Decentraland',
-      brandUrl: 'https://decentraland.org',
-      brandImage: 'https://ui.decentraland.org/color_dark_text.png'
+      brandTitle: 'UI | Beland',
+      brandUrl: 'https://beland.io',
+      brandImage: 'https://ui.beland.io/color_dark_text.png'
     })
   }
 })

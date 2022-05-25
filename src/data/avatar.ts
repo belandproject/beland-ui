@@ -11,9 +11,8 @@ export const avatar: Avatar = {
   avatar: {
     bodyShape: 'urn:beland:off-chain:base-avatars:BaseFemale',
     snapshots: {
-      face256:
-        'https://peer-ec1.decentraland.org/content/contents/QmcDmQ7WbDFU65idd4PEwEKBM1bgQi88Y6CByCWFMN8raV',
-      body: 'https://peer-ec1.decentraland.org/content/contents/QmaE1YgiBJAbEqCkBtmDe8fTMzqBUgvUCY6HifrjV1WAnY'
+      face256: '',
+      body: ''
     },
     eyes: { color: { r: 0.37109375, g: 0.22265625, b: 0.1953125 } },
     hair: { color: { r: 0.109375, g: 0.109375, b: 0.109375 } },

@@ -1,4 +1,4 @@
-.dcl.badge {
+.bld.badge {
   font-size: 13px;
   line-height: 18px;
   border-radius: 5px;
@@ -12,15 +12,15 @@
   flex: none;
 }
 
-.dcl.badge a {
+.bld.badge a {
   /* Link to "enter world" looking oddly at line-height: 18px */
   line-height: 22px;
 }
 
-.ui.header + .dcl.badge {
+.ui.header + .bld.badge {
   margin-left: 16px;
 }
 
-.dcl.badge i.icon {
+.bld.badge i.icon {
   line-height: 1;
 }

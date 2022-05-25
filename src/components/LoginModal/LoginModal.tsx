@@ -95,7 +95,7 @@ class LoginModalOption extends React.PureComponent<LoginModalOptionProps> {
     }
 
     return (
-      <div className={`dcl option ${type}`} onClick={onClick}>
+      <div className={`bld option ${type}`} onClick={onClick}>
         <div className="image" />
         <div className="info">
           <div className="title">{title}</div>
@@ -139,7 +139,7 @@ export class LoginModal extends React.Component<LoginModalProps> {
     }
 
     return (
-      <Modal open={open} className={`dcl login-modal ${className}`.trim()}>
+      <Modal open={open} className={`bld login-modal ${className}`.trim()}>
         <ModalNavigation
           title={i18n.title}
           subtitle={i18n.subtitle}

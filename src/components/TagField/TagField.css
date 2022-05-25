@@ -1,9 +1,9 @@
-.dcl.tag-field {
+.bld.tag-field {
   min-width: 400px;
 }
 
-.dcl.tag-field .ui.dropdown,
-.dcl.tag-field .ui.dropdown.active {
+.bld.tag-field .ui.dropdown,
+.bld.tag-field .ui.dropdown.active {
   background: transparent;
   border-radius: 0px;
   border: none;
@@ -14,14 +14,14 @@
   border-bottom: 2px solid var(--divider);
 }
 
-.dcl.tag-field .ui.search.dropdown > input.search {
+.bld.tag-field .ui.search.dropdown > input.search {
   padding: 0px 0px 10px 0px;
 }
 
-.dcl.tag-field .ui.dropdown > .text,
-.dcl.tag-field .ui.dropdown > .default.text,
-.dcl.tag-field .ui.dropdown > .text:not(.default),
-.dcl.tag-field .ui.search.dropdown > input.search {
+.bld.tag-field .ui.dropdown > .text,
+.bld.tag-field .ui.dropdown > .default.text,
+.bld.tag-field .ui.dropdown > .text:not(.default),
+.bld.tag-field .ui.search.dropdown > input.search {
   color: var(--text);
   font-size: 16px !important;
   font-family: var(--font-family);
@@ -30,50 +30,50 @@
   margin-bottom: 0px;
 }
 
-.dcl.tag-field .ui.dropdown > .text,
-.dcl.tag-field .ui.dropdown > .default.text,
-.dcl.tag-field .ui.dropdown > .text:not(.default) {
+.bld.tag-field .ui.dropdown > .text,
+.bld.tag-field .ui.dropdown > .default.text,
+.bld.tag-field .ui.dropdown > .text:not(.default) {
   font-size: 16px;
 }
 
-.dcl.tag-field .ui.search.dropdown > input.search {
+.bld.tag-field .ui.search.dropdown > input.search {
   font-size: 13px;
 }
 
-.dcl.tag-field .ui.dropdown > .default.text {
+.bld.tag-field .ui.dropdown > .default.text {
   opacity: 0.6;
   margin-left: 0px;
 }
 
-.dcl.tag-field .ui.selection.active.dropdown,
-.dcl.tag-field .ui.selection.active.dropdown:hover {
+.bld.tag-field .ui.selection.active.dropdown,
+.bld.tag-field .ui.selection.active.dropdown:hover {
   border-bottom: 2px solid var(--text);
 }
 
-.dcl.tag-field .ui.dropdown .dropdown.icon {
+.bld.tag-field .ui.dropdown .dropdown.icon {
   display: none;
 }
 
-.dcl.tag-field .ui.dropdown .text,
-.dcl.tag-field .ui.dropdown .default.text {
+.bld.tag-field .ui.dropdown .text,
+.bld.tag-field .ui.dropdown .default.text {
   color: var(--text);
 }
 
-.dcl.tag-field .ui.dropdown .menu {
+.bld.tag-field .ui.dropdown .menu {
   display: none !important;
 }
 
-.dcl.tag-field .message {
+.bld.tag-field .message {
   margin-top: 8px;
   color: var(--secondary-text);
   font-size: 15px;
 }
 
-.dcl.tag-field .ui.selection.active.dropdown {
+.bld.tag-field .ui.selection.active.dropdown {
   box-shadow: none;
 }
 
-.dcl.tag-field .ui.multiple.dropdown > .label {
+.bld.tag-field .ui.multiple.dropdown > .label {
   background: transparent;
   color: var(--secondary-text);
   border: 2px solid var(--divider);
@@ -83,16 +83,16 @@
   font-size: 13px;
 }
 
-.dcl.tag-field .ui.multiple.dropdown > .label:hover {
+.bld.tag-field .ui.multiple.dropdown > .label:hover {
   background: var(--primary);
   color: var(--text-on-primary);
   border: 2px solid var(--primary);
 }
 
-.dcl.tag-field.error .message {
+.bld.tag-field.error .message {
   color: var(--error);
 }
 
-.dcl.tag-field.error .ui.header.sub {
+.bld.tag-field.error .ui.header.sub {
   color: var(--error);
 }

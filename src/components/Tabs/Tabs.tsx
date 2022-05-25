@@ -12,11 +12,11 @@ export class Tabs extends React.PureComponent<TabsProps> {
     isFullscreen: false
   }
   static Left = ({ children }: { children: React.ReactNode }): JSX.Element => (
-    <div className="dcl tabs-left">{children}</div>
+    <div className="bld tabs-left">{children}</div>
   )
 
   static Right = ({ children }: { children: React.ReactNode }): JSX.Element => (
-    <div className="dcl tabs-right">{children}</div>
+    <div className="bld tabs-right">{children}</div>
   )
 
   static Tab = ({
@@ -28,7 +28,7 @@ export class Tabs extends React.PureComponent<TabsProps> {
     onClick?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
     children: React.ReactNode
   }) => (
-    <div className={`dcl tab ${active ? 'active' : ''}`} onClick={onClick}>
+    <div className={`bld tab ${active ? 'active' : ''}`} onClick={onClick}>
       {children}
       {active ? <div className="active-bar"></div> : null}
     </div>
@@ -38,7 +38,7 @@ export class Tabs extends React.PureComponent<TabsProps> {
     const { children, isFullscreen, onClick } = this.props
     return (
       <div
-        className={`dcl tabs ${isFullscreen ? 'fullscreen' : ''}`}
+        className={`bld tabs ${isFullscreen ? 'fullscreen' : ''}`}
         onClick={onClick}
       >
         <NotMobile>

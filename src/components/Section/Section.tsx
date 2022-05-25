@@ -13,7 +13,7 @@ export class Section extends React.PureComponent<SectionProps> {
 
   render(): JSX.Element {
     const { size, className, children } = this.props
-    const classes = ['dcl', 'section', size]
+    const classes = ['bld', 'section', size]
     if (className) {
       classes.push(className)
     }

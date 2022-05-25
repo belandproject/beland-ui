@@ -15,7 +15,7 @@ export class Close extends React.PureComponent<CloseProps> {
     const { small, onClick } = this.props
 
     return (
-      <div className={`dcl close ${small ? 'small' : ''}`} onClick={onClick}>
+      <div className={`bld close ${small ? 'small' : ''}`} onClick={onClick}>
         <div className="close-icon" />
       </div>
     )

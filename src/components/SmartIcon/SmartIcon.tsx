@@ -12,6 +12,6 @@ export class SmartIcon extends React.PureComponent<SmartIconProps> {
 
   render() {
     const { className } = this.props
-    return <div className={`dcl smart-icon ${className}`.trim()} />
+    return <div className={`bld smart-icon ${className}`.trim()} />
   }
 }

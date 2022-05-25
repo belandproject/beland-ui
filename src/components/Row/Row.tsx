@@ -36,7 +36,7 @@ export class Row extends React.PureComponent<RowProps> {
       shrink
     } = this.props
 
-    const classes = ['dcl', 'row']
+    const classes = ['bld', 'row']
     if (center) {
       console.warn(
         `The prop 'center' has been deprecated from <Row> component, use aligh="center" instead.`

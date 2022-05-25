@@ -13,7 +13,7 @@ export class Stats extends React.Component<StatsProps> {
   }
   render(): JSX.Element {
     const { title, className, children } = this.props
-    const classes = `dcl stats ${className}`.trim()
+    const classes = `bld stats ${className}`.trim()
     return (
       <span className={classes}>
         <Header sub>{title}</Header>

@@ -35,7 +35,7 @@ export class Parallax extends React.PureComponent {
   }
   render(): JSX.Element {
     return (
-      <div className="dcl parallax" ref={(scene) => (this.scene = scene)}>
+      <div className="bld parallax" ref={(scene) => (this.scene = scene)}>
         {this.props.children}
       </div>
     )

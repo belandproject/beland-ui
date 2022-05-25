@@ -64,7 +64,7 @@ export class Blockie extends React.PureComponent<BlockieProps> {
 
   render(): JSX.Element {
     const { size, scale, children, className } = this.props
-    let classes = `dcl blockie ${className}`.trim()
+    let classes = `bld blockie ${className}`.trim()
     if (scale * size <= 16) {
       classes += ' mini'
     } else if (scale * size <= 24) {
@@ -77,9 +77,9 @@ export class Blockie extends React.PureComponent<BlockieProps> {
 
     if (children) {
       return (
-        <span className="dcl blockie-wrapper">
+        <span className="bld blockie-wrapper">
           {canvas}
-          <span className="dcl blockie-children">{children}</span>
+          <span className="bld blockie-children">{children}</span>
         </span>
       )
     }

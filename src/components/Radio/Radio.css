@@ -47,7 +47,7 @@
   background-size: contain;
 }
 
-.dcl.row > .ui.checkbox + ui.checkbox {
+.bld.row > .ui.checkbox + ui.checkbox {
   margin-left: 16px;
 }
 

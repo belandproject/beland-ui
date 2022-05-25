@@ -11,7 +11,7 @@ export class Back extends React.PureComponent<BackProps> {
   render(): JSX.Element {
     const { children, className, absolute, onClick } = this.props
 
-    const classes = ['dcl', 'back']
+    const classes = ['bld', 'back']
     if (className) {
       classes.push(className)
     }

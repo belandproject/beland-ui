@@ -1,4 +1,4 @@
-.dcl.center {
+.bld.center {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -10,14 +10,14 @@
   justify-content: center;
 }
 
-.dcl.center.screen {
+.bld.center.screen {
   position: fixed;
   top: var(--navbar-height);
   bottom: var(--footer-height);
 }
 
 @media (max-width: 768px) {
-  .dcl.center.screen {
+  .bld.center.screen {
     position: absolute;
     align-items: flex-start;
     margin-top: 24px;

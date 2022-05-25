@@ -16,7 +16,7 @@ export class Toasts extends React.PureComponent<ToastsProps> {
   render(): JSX.Element {
     const { position = 'top right', children } = this.props
 
-    const className = ['dcl', 'toasts', ...position.split(' ')]
+    const className = ['bld', 'toasts', ...position.split(' ')]
 
     return <div className={className.join(' ')}>{children}</div>
   }

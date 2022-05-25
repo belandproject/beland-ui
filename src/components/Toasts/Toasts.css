@@ -1,20 +1,20 @@
-.dcl.toasts {
+.bld.toasts {
   position: fixed;
   z-index: 3001; /* Appear over modals */
 }
 
-.dcl.toasts.top {
+.bld.toasts.top {
   top: 0;
 }
 
-.dcl.toasts.bottom {
+.bld.toasts.bottom {
   bottom: 0;
 }
 
-.dcl.toasts.left {
+.bld.toasts.left {
   left: 0;
 }
 
-.dcl.toasts.right {
+.bld.toasts.right {
   right: 0;
 }
