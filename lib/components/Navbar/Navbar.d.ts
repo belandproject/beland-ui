@@ -16,7 +16,7 @@ export declare type NavbarI18N = {
     };
 };
 export declare type NavbarProps = {
-    mana?: number;
+    bean?: number;
     address?: string;
     activePage?: 'marketplace' | 'docs' | 'events' | 'agora' | 'dao' | 'blog' | 'builder' | string;
     leftMenu?: React.ReactNode;
